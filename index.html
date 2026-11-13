@@ -3,71 +3,324 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#061522">
+<meta name="theme-color" content="#071826">
 <meta name="description" content="Jinali Kikani and Pranit Malvania invite you to celebrate their wedding on 26 January 2027.">
-<title>Jinali & Pranit | Wedding Invitation</title>
+<title>Jinali &amp; Pranit | Wedding Invitation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Great+Vibes&amp;family=Noto+Serif+Gujarati:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
-:root{--navy:#061522;--gold:#f4d294;--ivory:#fff9ed;--font:"Cormorant Garamond",Georgia,serif;--gu:"Noto Serif Gujarati",serif}
-*{box-sizing:border-box}html{scroll-snap-type:y mandatory;scroll-behavior:smooth;background:var(--navy)}body{margin:0;color:var(--ivory);background:var(--navy);font-family:var(--font);overflow-x:hidden}button{font:inherit}
-.story{max-width:620px;margin:auto;box-shadow:0 0 90px #0009}.scene{height:100svh;min-height:560px;position:relative;overflow:hidden;scroll-snap-align:start;scroll-snap-stop:always;isolation:isolate;background:var(--navy)}
-.art,.shade,.sparkles,.petals,.doors{position:absolute;inset:0}.art{z-index:-4;background-size:cover;background-position:center;transform:scale(1.07);transition:transform 1.7s}.scene.active .art{transform:scale(1)}
-.shade{z-index:-3;background:linear-gradient(180deg,#0615227a,transparent 55%,#06152245)}.sparkles{z-index:-2;pointer-events:none;background-image:radial-gradient(2px 2px at 17% 30%,#fff 90%,transparent),radial-gradient(2px 2px at 79% 19%,#f9dda1 90%,transparent),radial-gradient(1px 1px at 43% 67%,#fff 90%,transparent);background-size:280px 340px;animation:twinkle 4s ease-in-out infinite alternate;opacity:.6}
-@keyframes twinkle{to{opacity:.2;transform:translateY(8px)}}.petals{z-index:8;pointer-events:none}.petal{position:absolute;top:-8%;width:11px;height:18px;border-radius:75% 15% 70% 20%;background:linear-gradient(135deg,#ffb6b6,#c72953 75%);opacity:.8;animation:fall var(--dur,12s) linear infinite;animation-delay:var(--delay,0s)}@keyframes fall{to{transform:translate(var(--drift,40px),115svh) rotate(690deg)}}
-.overlay{position:relative;z-index:4;text-align:center;padding:0 25px;max-width:570px;margin:auto;display:flex;flex-direction:column;align-items:center}.overline{font-size:clamp(12px,3.4vw,15px);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);text-shadow:0 2px 6px #000}h1,h2,p{margin:0}.ornament{color:var(--gold);font-size:25px;line-height:1;margin:10px 0}
-.intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;background:var(--navy);z-index:-4}.intro .overlay{padding-top:clamp(58px,9svh,100px);height:100%;justify-content:space-between;padding-bottom:55px}.intro-title{font-size:clamp(24px,7vw,36px);letter-spacing:.13em;line-height:1.1;text-transform:uppercase;text-shadow:0 2px 12px #000}.invocation{font-size:clamp(17px,5vw,24px);color:var(--gold);text-shadow:0 2px 10px #000}
-.swipe-hint{display:flex;flex-direction:column;align-items:center;gap:2px;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-family:Georgia,serif;color:#fff4d5;text-shadow:0 2px 9px #000;animation:bob 2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(7px)}}.swipe-hint svg{width:22px;height:22px}
-.names .art{background-image:url("./palace-entrance.png")}.names .overlay{padding-top:clamp(110px,18svh,185px)}.names h1{font-size:clamp(47px,13vw,82px);font-weight:500;line-height:.87;text-shadow:0 2px 16px #000}.names h1 span{display:block}.names h1 .and{font-family:"Great Vibes",cursive;text-transform:none;color:var(--gold);font-size:.75em;line-height:1.2}.script{font-family:"Great Vibes",cursive;color:var(--gold);font-size:clamp(43px,11vw,65px);font-weight:400;line-height:1.05;text-shadow:0 2px 14px #000}.names .script{margin-top:18px}.date-line{font-size:clamp(20px,5.5vw,29px);margin-top:16px;letter-spacing:.05em;text-shadow:0 2px 10px #000}
-.names .swipe-hint,.door-scene .swipe-hint,.wedding .swipe-hint{position:absolute;bottom:25px;left:0;right:0}
-.door-scene .art{background-image:url("./palace-doorway.png")}.door-scene .shade{background:linear-gradient(180deg,#061522b5 0%,#06152218 48%,transparent)}.door-scene .overlay{padding-top:clamp(58px,9svh,110px)}.door-scene h2{font-size:clamp(29px,7.5vw,46px);font-weight:500;line-height:1.05;text-shadow:0 2px 12px #000}.copy{max-width:385px;font-size:clamp(20px,5vw,25px);line-height:1.2;text-shadow:0 2px 10px #000;margin-top:12px}
-.doors{z-index:6;display:flex;pointer-events:none;perspective:800px}.door{width:50%;height:100%;background:repeating-linear-gradient(90deg,#815b34 0 4px,#cda264 6px 13px,#76502c 15px 17px);border:9px ridge #d8ad6b;box-shadow:inset 0 0 65px #251406,0 0 20px #000;position:relative;transition:transform 1.55s cubic-bezier(.32,.7,.18,1);transition-delay:.2s}.door::before{content:"";position:absolute;top:15%;bottom:15%;left:14%;right:14%;border:5px double #f0cf8e;border-radius:42% 42% 3% 3%;box-shadow:inset 0 0 20px #2c190b}.door::after{content:"";position:absolute;top:48%;width:14px;height:24px;background:#e9c685;border-radius:50%;box-shadow:0 0 10px #0008}.door-left::after{right:4%}.door-right::after{left:4%}.door-scene.active .door-left{transform:translateX(-108%) rotateY(-23deg)}.door-scene.active .door-right{transform:translateX(108%) rotateY(23deg)}
-.wedding .art,.closing .art{background-image:url("./palace-courtyard.png")}.wedding .shade,.closing .shade{background:linear-gradient(180deg,#061522a8,#0615225c 43%,transparent 69%)}.wedding .overlay{padding-top:clamp(155px,21svh,220px)}.wedding h2{font-size:clamp(28px,7vw,42px);font-weight:500;letter-spacing:.07em;text-transform:uppercase;text-shadow:0 2px 12px #000}.day-number{font-size:clamp(83px,24vw,135px);font-weight:400;line-height:.83;color:var(--gold);text-shadow:0 3px 15px #000}.month{font-size:clamp(24px,6vw,34px);letter-spacing:.12em;text-transform:uppercase;text-shadow:0 2px 12px #000}.detail{font-size:clamp(19px,5vw,26px);line-height:1.24;max-width:450px;text-shadow:0 2px 12px #000}.detail strong{color:var(--gold);font-weight:600}.wedding .detail{margin-top:18px}
-.closing .art{background-image:url("./palace-night-wedding.png")}.closing .overlay{padding-top:clamp(155px,23svh,235px)}.closing h2{font-size:clamp(25px,7vw,40px);line-height:1.07;text-transform:uppercase;letter-spacing:.06em;text-shadow:0 2px 14px #000}.closing .script{margin:10px 0 15px}.closing .detail{max-width:390px}
-.controls{position:fixed;z-index:30;top:max(12px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(100%,620px);display:flex;justify-content:space-between;padding:0 14px;pointer-events:none}.controls button{pointer-events:auto;color:#fff7df;background:#061522b0;border:1px solid #e7c9879e;border-radius:99px;padding:9px 13px;font:600 11px/1 Georgia,serif;letter-spacing:.1em;backdrop-filter:blur(8px);min-height:37px}.controls button:focus-visible{outline:2px solid #fff}
-.dots{position:fixed;z-index:25;right:max(12px,calc((100vw - 620px)/2 + 11px));top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px}.dots a{width:7px;height:7px;border-radius:50%;display:block;background:#fff8;border:1px solid #fff9;transition:transform .3s,background .3s}.dots a.current{background:var(--gold);transform:scale(1.6)}
-.fade{opacity:0;transform:translateY(25px);transition:opacity .9s ease,transform .9s ease}.scene.active .fade{opacity:1;transform:translateY(0)}.scene.active .fade:nth-child(2){transition-delay:.16s}.scene.active .fade:nth-child(3){transition-delay:.3s}.scene.active .fade:nth-child(4){transition-delay:.45s}
-body[lang="gu"] .overlay{font-family:var(--gu)}body[lang="gu"] .script{font-family:var(--gu);font-size:clamp(29px,7vw,43px)}body[lang="gu"] .names h1{font-size:clamp(42px,11vw,68px);line-height:1.28}body[lang="gu"] .names h1 .and{font-family:var(--gu);font-size:.55em}body[lang="gu"] .overline{letter-spacing:.03em}
-@media(max-height:690px){.wedding .overlay,.closing .overlay{padding-top:17svh}.names .overlay{padding-top:15svh}.door-scene .overlay{padding-top:7svh}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sparkles,.petal,.swipe-hint{animation:none}.art,.fade,.door{transition:none}.door-scene .door{display:none}.fade{opacity:1;transform:none}}
-.intro .overlay>div:nth-child(2){display:none}
-.door-scene .overlay{padding-top:75svh}
-.door-scene .overlay h2,.door-scene .overlay .copy{display:none}
-.loading-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:30px;text-align:center;background:radial-gradient(circle at 50% 35%,#223b4b 0%,#091b2c 42%,#061522 75%);transition:opacity .7s ease,visibility .7s ease}
-.loading-screen::before{content:"";position:absolute;inset:0;opacity:.28;background:url("./ganpati-poster.png") center/cover no-repeat;mask-image:linear-gradient(transparent 5%,#000 35%,transparent 85%)}
-.loading-content{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px;max-width:390px}.loading-mark{color:var(--gold);font-size:34px}.loading-content h2{font-size:clamp(36px,9vw,57px);font-weight:500;line-height:1.05}.loading-content p{font-size:20px;line-height:1.25}.loading-status{color:var(--gold);min-height:26px}.loading-spinner{width:36px;height:36px;border:2px solid #f4d29455;border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-.loading-language{display:flex;flex-direction:column;align-items:center;gap:10px;margin:5px 0}.loading-language-label{font-size:16px;color:var(--ivory)}.loading-language-options{display:flex;gap:10px}.loading-language-options button{min-width:120px;min-height:44px;padding:9px 15px;border:1px solid #f4d294a8;border-radius:99px;background:#061522b8;color:var(--ivory);font:600 17px/1.2 var(--font);cursor:pointer}.loading-language-options button[aria-pressed="true"]{background:var(--gold);color:var(--navy);border-color:var(--gold)}.loading-language-options button[data-language="gu"]{font-family:var(--gu);font-size:15px}.loading-language-options button:focus-visible{outline:3px solid white;outline-offset:3px}body[lang="gu"] .loading-content{font-family:var(--gu)}
-.enter-button{min-height:48px;padding:12px 25px;border:1px solid var(--gold);border-radius:99px;background:var(--gold);color:var(--navy);font:600 16px/1.2 var(--font);letter-spacing:.04em;cursor:pointer}.enter-button:disabled{display:none}.enter-button:focus-visible{outline:3px solid white;outline-offset:3px}.loading-screen.ready .loading-spinner{display:none}.loading-screen.ready .loading-status{color:var(--ivory)}body.entered .loading-screen{opacity:0;visibility:hidden;pointer-events:none}body:not(.entered){overflow:hidden}body:not(.entered) .controls,body:not(.entered) .dots{visibility:hidden}
+:root{--navy:#071826;--navy-deep:#03101c;--gold:#f1d29a;--gold-bright:#ffe4ad;--ivory:#fff9ee;--serif:"Cormorant Garamond",Georgia,serif;--gu:"Noto Serif Gujarati",serif}
+*{box-sizing:border-box}
+html{background:var(--navy-deep);scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:var(--navy-deep);color:var(--ivory);font-family:var(--serif)}
+body:not(.entered){overflow:hidden}
+button{font:inherit}
+h1,h2,p{margin:0}
+button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.loading-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 50% 38%,#233f4b 0%,#102b3d 35%,#051422 78%);text-align:center;transition:opacity .7s ease,visibility .7s ease}
+.loading-screen::before{content:"";position:absolute;inset:0;background:url("./palace-entrance.png") center 53%/cover no-repeat;opacity:.16;mask-image:linear-gradient(transparent 5%,#000 36%,transparent 95%)}
+.loading-content{position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;width:min(100%,390px)}
+.loading-logo{width:76px;height:76px;filter:drop-shadow(0 0 12px #e5bc7090)}
+.loading-content h2{font-size:clamp(39px,10vw,57px);line-height:.98;font-weight:500}
+.loading-content .subtitle{font-size:20px;line-height:1.15}
+.loading-language{display:flex;flex-direction:column;align-items:center;gap:9px;margin:6px 0}
+.loading-language-label{font-size:17px;color:var(--gold)}
+.loading-language-options{display:flex;gap:10px}
+.loading-language-options button{min-width:116px;min-height:45px;padding:8px 15px;border:1px solid #f1d29aa8;border-radius:99px;background:#071826c7;color:var(--ivory);font:600 18px/1.2 var(--serif);cursor:pointer}
+.loading-language-options button[data-language="gu"]{font:500 15px/1.2 var(--gu)}
+.loading-language-options button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.loading-spinner{width:32px;height:32px;margin-top:3px;border:2px solid #f1d29a4d;border-top-color:var(--gold);border-radius:50%;animation:spin .9s linear infinite}
+.loading-status{min-height:25px;color:var(--gold);font-size:18px}
+.loading-screen.ready .loading-spinner{display:none}
+.loading-screen.ready .loading-status{color:var(--ivory)}
+.enter-button{min-height:47px;padding:11px 23px;border:1px solid var(--gold);border-radius:99px;background:var(--gold);color:var(--navy);font:600 17px/1.2 var(--serif);cursor:pointer}
+.enter-button:disabled{display:none}
+body.entered .loading-screen{opacity:0;visibility:hidden;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.journey{position:relative;height:500svh}
+.stage{position:sticky;top:0;width:min(100%,620px);height:100svh;margin:auto;overflow:hidden;background:var(--navy);box-shadow:0 0 85px #000b;isolation:isolate}
+.scene{position:absolute;inset:0;overflow:hidden;opacity:0;visibility:hidden;will-change:opacity}
+.scene:first-child{opacity:1;visibility:visible}
+.visual{position:absolute;inset:-5%;background-position:center;background-size:cover;will-change:transform}
+.scene-ganpati .visual,.scene-couple .visual{background-image:url("./palace-entrance.png")}
+.scene-ganpati .visual{transform-origin:50% 40%}.scene-couple .visual,.scene-door .visual{transform-origin:50% 75%}.scene-wedding .visual,.scene-final .visual{transform-origin:50% 70%}
+.scene-door .visual{background-image:url("./palace-doorway.png")}
+.scene-wedding .visual{background-image:url("./palace-courtyard.png")}
+.scene-final .visual{background-image:url("./palace-night-wedding.png")}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,#03101c82 0%,#03101c21 42%,#03101c17 72%,#03101c5e 100%)}
+.scene-wedding .shade,.scene-final .shade{background:linear-gradient(180deg,#03101ca6 0%,#03101c35 50%,transparent 78%)}
+.stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 13% 18%,#fff9 99%,transparent),radial-gradient(1px 1px at 81% 33%,#ffe1a9 99%,transparent),radial-gradient(1.7px 1.7px at 43% 68%,#fff9 99%,transparent);background-size:310px 380px;opacity:.48;pointer-events:none}
+.halo{position:absolute;top:12%;left:50%;width:90%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,#e4ae532b 0%,#e4ae5310 43%,transparent 69%);filter:blur(3px);pointer-events:none;will-change:transform,opacity}
+.halo::after{content:"";position:absolute;inset:-5%;border-radius:50%;background:repeating-conic-gradient(from 0deg,#ffe5ad75 0deg 1deg,transparent 1deg 13deg);mask:radial-gradient(circle,transparent 0 36%,#000 38%,transparent 71%);opacity:.55}
+.ganpati-art{position:absolute;z-index:2;top:19%;left:50%;width:min(72%,410px);height:auto;max-height:51%;object-fit:contain;filter:drop-shadow(0 0 20px #edc0798a);will-change:transform,opacity}
+.scene-content{position:absolute;z-index:3;left:17px;right:17px;text-align:center;will-change:transform,opacity}
+.scene-ganpati .scene-content{top:7%}
+.scene-couple .scene-content{top:18%}
+.scene-door .scene-content{top:9%}
+.scene-wedding .scene-content{top:18%}
+.scene-final .scene-content{top:15%}
+.eyebrow{color:var(--gold);font:600 clamp(12px,3.4vw,15px)/1.35 var(--serif);letter-spacing:.15em;text-transform:uppercase;text-shadow:0 2px 10px #000}
+.invocation{color:var(--gold-bright);font-size:clamp(19px,5vw,27px);text-shadow:0 2px 12px #000}
+.blessing{margin-top:8px;font-size:clamp(17px,4.5vw,22px);text-shadow:0 2px 12px #000}
+.scene-couple h1{margin-top:22px;font-size:clamp(52px,13.5vw,86px);font-weight:500;line-height:.78;text-shadow:0 3px 20px #000}
+.scene-couple h1 span{display:block}
+.scene-couple h1 .amp{margin:6px 0;color:var(--gold);font:400 .75em/1 "Great Vibes",cursive}
+.script{color:var(--gold);font:400 clamp(40px,10.5vw,64px)/1 "Great Vibes",cursive;text-shadow:0 2px 15px #000}
+.scene-couple .script{margin-top:19px}
+.date-line{margin-top:15px;font-size:clamp(20px,5.3vw,29px);text-shadow:0 2px 12px #000}
+.scene-door h2{margin-top:13px;font-size:clamp(36px,8vw,52px);font-weight:500;line-height:.98;text-shadow:0 2px 14px #000}
+.scene-door .note{margin:12px auto 0;max-width:400px;font-size:clamp(18px,4.4vw,23px);line-height:1.16;text-shadow:0 2px 12px #000}
+.gate{position:absolute;z-index:2;top:45%;left:20%;width:60%;height:44%;display:flex;perspective:900px;filter:drop-shadow(0 10px 13px #000b)}
+.gate-leaf{position:relative;width:50%;height:100%;border:5px ridge #e6bd75;background:repeating-linear-gradient(90deg,#724522 0 6px,#9a693b 6px 14px,#ba8750 14px 18px);box-shadow:inset 0 0 25px #241107,0 0 8px #000b;backface-visibility:hidden;will-change:transform}
+.gate-left{transform-origin:left center;border-radius:65% 0 0 0}
+.gate-right{transform-origin:right center;border-radius:0 65% 0 0}
+.gate-leaf::before{content:"";position:absolute;inset:8% 13% 8%;border:2px solid #f4d79e;border-radius:48% 48% 4% 4%;box-shadow:inset 0 0 0 6px #4d2b19,inset 0 0 0 8px #c89b5f}
+.gate-leaf::after{content:"✦";position:absolute;top:46%;left:50%;transform:translate(-50%,-50%);color:#ffe5ab;font-size:clamp(25px,6vw,38px);text-shadow:0 0 8px #f3ce93}
+.scene-wedding h2{margin-top:8px;font-size:clamp(29px,7vw,43px);font-weight:500;text-transform:uppercase;letter-spacing:.08em;text-shadow:0 2px 14px #000}
+.day-number{color:var(--gold-bright);font-size:clamp(88px,24vw,142px);font-weight:400;line-height:.8;text-shadow:0 3px 18px #000}
+.month{margin-top:5px;font-size:clamp(24px,6vw,35px);letter-spacing:.08em;text-transform:uppercase;text-shadow:0 2px 14px #000}
+.detail{margin:15px auto 0;max-width:430px;font-size:clamp(20px,5vw,27px);line-height:1.12;text-shadow:0 2px 12px #000}
+.detail strong{color:var(--gold-bright);font-weight:600}
+.final-logo{width:clamp(105px,28vw,155px);height:auto;margin:0 auto 10px;filter:drop-shadow(0 0 12px #e4b66265)}
+.scene-final h2{font-size:clamp(30px,7vw,42px);font-weight:500;line-height:1.06;text-shadow:0 2px 14px #000}
+.scene-final .script{margin-top:12px}
+.scene-final .detail{max-width:380px}
+.petals{position:absolute;inset:0;z-index:7;overflow:hidden;pointer-events:none}
+.petal{position:absolute;top:-30px;width:11px;height:17px;border-radius:80% 12% 78% 15%;background:linear-gradient(135deg,#ffb8bd,#c73554 78%);box-shadow:0 0 8px #f44b6b50;will-change:transform}
+.controls{position:fixed;z-index:30;top:max(13px,env(safe-area-inset-top));left:50%;width:min(100%,620px);transform:translateX(-50%);display:flex;justify-content:space-between;padding:0 13px;pointer-events:none}
+.controls button{pointer-events:auto;min-height:38px;padding:8px 13px;border:1px solid #f1d29a99;border-radius:99px;background:#061522d1;color:#fff8e9;backdrop-filter:blur(8px);font:600 11px/1 Georgia,serif;letter-spacing:.08em}
+body:not(.entered) .controls{visibility:hidden}
+.dots{position:absolute;z-index:24;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px}
+.dots button{width:10px;height:10px;padding:0;border:1px solid #fff9;border-radius:50%;background:#fff7;cursor:pointer;transition:transform .25s,background .25s}
+.dots button[aria-current="step"]{background:var(--gold);transform:scale(1.4)}
+.swipe-cue{position:absolute;z-index:20;bottom:max(18px,env(safe-area-inset-bottom));left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:3px;color:#fff3d5;font:600 11px/1.2 Georgia,serif;letter-spacing:.17em;text-transform:uppercase;text-shadow:0 2px 7px #000;pointer-events:none}
+.swipe-cue svg{width:20px;height:20px}
+.progress{position:absolute;z-index:25;bottom:0;left:0;width:100%;height:3px;background:#f1d29a36}
+.progress span{display:block;width:0;height:100%;background:var(--gold);box-shadow:0 0 8px #f1d29a}
+body[lang="gu"] .scene-content,body[lang="gu"] .loading-content{font-family:var(--gu)}
+body[lang="gu"] .script,body[lang="gu"] .scene-couple h1 .amp{font-family:var(--gu);font-size:clamp(27px,7vw,42px)}
+body[lang="gu"] .scene-couple h1{font-size:clamp(43px,11vw,70px);line-height:1.17}
+body[lang="gu"] .eyebrow{font-family:var(--gu);letter-spacing:0}
+body[lang="gu"] .loading-language-options button[data-language="en"]{font-family:var(--serif)}
+@media(max-height:650px){.ganpati-art{top:18%;max-height:43%}.scene-couple .scene-content{top:14%}.scene-wedding .scene-content,.scene-final .scene-content{top:12%}.scene-door .scene-content{top:7%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.loading-spinner{animation:none}.loading-screen{transition:none}.dots button{transition:none}}
 </style>
 </head>
 <body lang="en">
-<div class="loading-screen" id="loading-screen" role="dialog" aria-modal="true" aria-labelledby="loading-title"><div class="loading-content"><span class="loading-mark" aria-hidden="true">✦</span><h2 id="loading-title" data-en="Jinali <span style='color:var(--gold)'>&amp;</span> Pranit" data-gu="જિનાલી <span style='color:var(--gold)'>અને</span> પ્રણિત">Jinali <span style="color:var(--gold)">&amp;</span> Pranit</h2><p data-en="A celebration is about to begin" data-gu="ઉજવણીની શરૂઆત થવાની છે">A celebration is about to begin</p><div class="loading-language" role="group" aria-labelledby="loading-language-label"><p class="loading-language-label" id="loading-language-label" data-en="Choose your language" data-gu="ભાષા પસંદ કરો">Choose your language</p><div class="loading-language-options"><button type="button" data-language="en" aria-pressed="true">English</button><button type="button" data-language="gu" aria-pressed="false">ગુજરાતી</button></div></div><div class="loading-spinner" aria-hidden="true"></div><p class="loading-status" id="loading-status" role="status" data-en="Preparing your invitation…" data-gu="આમંત્રણ તૈયાર થઈ રહ્યું છે…">Preparing your invitation…</p><button class="enter-button" id="enter-button" type="button" disabled data-en="Open invitation with music" data-gu="સંગીત સાથે આમંત્રણ ખોલો">Open invitation with music</button></div></div>
+<div class="loading-screen" id="loading-screen" role="dialog" aria-modal="true" aria-labelledby="loading-title">
+  <div class="loading-content">
+    <img class="loading-logo" src="./jp-monogram.svg" alt="Jinali and Pranit monogram">
+    <h2 id="loading-title" data-en="Jinali <span style='color:var(--gold)'>&amp;</span> Pranit" data-gu="જિનાલી <span style='color:var(--gold)'>અને</span> પ્રણિત">Jinali <span style="color:var(--gold)">&amp;</span> Pranit</h2>
+    <p class="subtitle" data-en="A celebration is about to begin" data-gu="ઉજવણીની શરૂઆત થવાની છે">A celebration is about to begin</p>
+    <div class="loading-language" role="group" aria-labelledby="loading-language-label">
+      <p class="loading-language-label" id="loading-language-label" data-en="Choose your language" data-gu="ભાષા પસંદ કરો">Choose your language</p>
+      <div class="loading-language-options">
+        <button type="button" data-language="en" aria-pressed="true">English</button>
+        <button type="button" data-language="gu" aria-pressed="false">ગુજરાતી</button>
+      </div>
+    </div>
+    <div class="loading-spinner" aria-hidden="true"></div>
+    <p class="loading-status" id="loading-status" role="status" data-en="Preparing your invitation…" data-gu="આમંત્રણ તૈયાર થઈ રહ્યું છે…">Preparing your invitation…</p>
+    <button class="enter-button" id="enter-button" type="button" disabled data-en="Open invitation with music" data-gu="સંગીત સાથે આમંત્રણ ખોલો">Open invitation with music</button>
+  </div>
+</div>
 <audio id="song" src="./wedding-song.m4a" preload="auto" loop></audio>
-<div class="controls" aria-label="Invitation controls"><button id="language" type="button" aria-label="Switch language">ગુજરાતી</button><button id="music" type="button" aria-label="Play music" aria-pressed="false">♫ PLAY MUSIC</button></div>
-<nav class="dots" aria-label="Invitation scenes"><a href="#ganpati" aria-label="Ganpati" class="current"></a><a href="#couple" aria-label="Couple"></a><a href="#doors" aria-label="Door reveal"></a><a href="#wedding" aria-label="Wedding details"></a><a href="#invitation" aria-label="Invitation"></a></nav>
-<main class="story">
-<section class="scene intro active" id="ganpati" aria-label="Ganpati blessing"><video class="intro-video" src="./ganpati-intro.mp4" poster="./ganpati-poster.png" muted playsinline preload="auto" aria-hidden="true"></video><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="invocation fade" data-en="॥ Shree Ganeshaya Namah ॥" data-gu="॥ શ્રી ગણેશાય નમઃ ॥">॥ Shree Ganeshaya Namah ॥</p><div><h1 class="intro-title fade" data-en="An invitation of love" data-gu="પ્રેમભર્યું આમંત્રણ">An invitation of love</h1><p class="ornament">❧</p></div><div class="swipe-hint"><span data-en="Swipe up to enter" data-gu="આગળ જોવા ઉપર સ્વાઇપ કરો">Swipe up to enter</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div></div></section>
-<section class="scene names" id="couple" aria-label="The couple"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="Together with their families" data-gu="પરિવારના આશીર્વાદ સાથે">Together with their families</p><h1 class="fade"><span data-en="Jinali" data-gu="જિનાલી">Jinali</span><span class="and" data-en="&amp;" data-gu="અને">&amp;</span><span data-en="Pranit" data-gu="પ્રણિત">Pranit</span></h1><p class="script fade" data-en="Decided on forever" data-gu="સદા માટે એક થયા">Decided on forever</p><p class="date-line fade" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p></div><div class="swipe-hint"><span data-en="Swipe to open the doors" data-gu="દરવાજા ખોલવા સ્વાઇપ કરો">Swipe to open the doors</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div><div class="petals"></div></section>
-<section class="scene door-scene" id="doors" aria-label="Doors opening to the celebration"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="With the blessings of Ganpati Bappa" data-gu="ગણપતિ બાપાના આશીર્વાદથી">With the blessings of Ganpati Bappa</p><h2 class="fade" data-en="Two hearts, one beautiful beginning" data-gu="બે હૃદય, એક સુંદર શરૂઆત">Two hearts, one beautiful beginning</h2><p class="copy fade" data-en="The Kikani and Malvania families invite you to share in this joyful celebration." data-gu="કિકાણી અને માલવાણિયા પરિવાર આ આનંદમય પ્રસંગે આપને હાર્દિક આમંત્રણ આપે છે.">The Kikani and Malvania families invite you to share in this joyful celebration.</p></div><div class="doors" aria-hidden="true"><div class="door door-left"></div><div class="door door-right"></div></div><div class="swipe-hint"><span data-en="Continue to the wedding" data-gu="લગ્નની વિગતો જોવા આગળ વધો">Continue to the wedding</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div><div class="petals"></div></section>
-<section class="scene wedding" id="wedding" aria-label="Wedding date and details"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="A day to remember" data-gu="યાદગાર દિવસ">A day to remember</p><h2 class="fade" data-en="Tuesday" data-gu="મંગળવાર">Tuesday</h2><div class="day-number fade" data-en="26" data-gu="૨૬">26</div><p class="month fade" data-en="January 2027" data-gu="જાન્યુઆરી ૨૦૨૭">January 2027</p><p class="detail fade" data-en="Wedding ceremony<br><strong>Time and venue to follow</strong>" data-gu="લગ્ન વિધિ<br><strong>સમય અને સ્થળની વિગતો ટૂંક સમયમાં</strong>">Wedding ceremony<br><strong>Time and venue to follow</strong></p></div><div class="swipe-hint"><span data-en="One more swipe" data-gu="એક સ્વાઇપ વધુ">One more swipe</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div><div class="petals"></div></section>
-<section class="scene closing" id="invitation" aria-label="Awaiting your presence"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="From our families to yours" data-gu="અમારા પરિવાર તરફથી આપના પરિવારને">From our families to yours</p><h2 class="fade" data-en="Awaiting your presence" data-gu="આપની ઉપસ્થિતિની આતુરતાથી રાહ જોઈશું">Awaiting your presence</h2><p class="script fade" data-en="Jinali &amp; Pranit" data-gu="જિનાલી અને પ્રણિત">Jinali &amp; Pranit</p><p class="detail fade" data-en="Your blessings will make our celebration complete.<br>More details will follow." data-gu="આપના આશીર્વાદથી અમારી ઉજવણી પૂર્ણ થશે.<br>વધુ વિગતો ટૂંક સમયમાં મળશે.">Your blessings will make our celebration complete.<br>More details will follow.</p></div><div class="petals"></div></section>
+<header class="controls" aria-label="Invitation controls">
+  <button id="language" type="button" aria-label="Switch language">ગુજરાતી</button>
+  <button id="music" type="button" aria-label="Play music" aria-pressed="false">♫ PLAY MUSIC</button>
+</header>
+<main class="journey" id="journey" aria-label="Jinali and Pranit wedding story">
+  <div class="stage" id="stage">
+    <section class="scene scene-ganpati" aria-label="Ganpati blessing">
+      <div class="visual"></div><div class="shade"></div><div class="stars"></div><div class="halo"></div>
+      <img class="ganpati-art" src="./ganpati-original.png" alt="Original golden illustration of Ganpati Bappa">
+      <div class="scene-content">
+        <p class="invocation" data-en="॥ Shree Ganeshaya Namah ॥" data-gu="॥ શ્રી ગણેશાય નમઃ ॥">॥ Shree Ganeshaya Namah ॥</p>
+        <p class="blessing" data-en="With blessings, our story begins" data-gu="આશીર્વાદ સાથે અમારી કહાની શરૂ થાય છે">With blessings, our story begins</p>
+      </div>
+    </section>
+    <section class="scene scene-couple" aria-label="The couple">
+      <div class="visual"></div><div class="shade"></div><div class="stars"></div>
+      <div class="scene-content">
+        <p class="eyebrow" data-en="Together with their families" data-gu="પરિવારના આશીર્વાદ સાથે">Together with their families</p>
+        <h1><span data-en="Jinali" data-gu="જિનાલી">Jinali</span><span class="amp" data-en="&amp;" data-gu="અને">&amp;</span><span data-en="Pranit" data-gu="પ્રણિત">Pranit</span></h1>
+        <p class="script" data-en="A beautiful beginning" data-gu="એક સુંદર શરૂઆત">A beautiful beginning</p>
+        <p class="date-line" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p>
+      </div>
+    </section>
+    <section class="scene scene-door" aria-label="Palace doors opening">
+      <div class="visual"></div><div class="shade"></div><div class="stars"></div>
+      <div class="scene-content">
+        <p class="eyebrow" data-en="With the blessings of Ganpati Bappa" data-gu="ગણપતિ બાપાના આશીર્વાદથી">With the blessings of Ganpati Bappa</p>
+        <h2 data-en="The doors open<br>to forever" data-gu="સદા માટેના સાથનો<br>શુભ આરંભ">The doors open<br>to forever</h2>
+        <p class="note" data-en="The Kikani and Malvania families invite you to celebrate with us." data-gu="કિકાણી અને માલવાણિયા પરિવાર આ આનંદમય પ્રસંગે આપને હાર્દિક આમંત્રણ આપે છે.">The Kikani and Malvania families invite you to celebrate with us.</p>
+      </div>
+      <div class="gate" aria-hidden="true"><div class="gate-leaf gate-left"></div><div class="gate-leaf gate-right"></div></div>
+    </section>
+    <section class="scene scene-wedding" aria-label="Wedding details">
+      <div class="visual"></div><div class="shade"></div><div class="stars"></div>
+      <div class="scene-content">
+        <p class="eyebrow" data-en="A day to remember" data-gu="યાદગાર દિવસ">A day to remember</p>
+        <h2 data-en="Tuesday" data-gu="મંગળવાર">Tuesday</h2>
+        <div class="day-number" data-en="26" data-gu="૨૬">26</div>
+        <p class="month" data-en="January 2027" data-gu="જાન્યુઆરી ૨૦૨૭">January 2027</p>
+        <p class="detail" data-en="Wedding ceremony<br><strong>Time and venue to follow</strong>" data-gu="લગ્ન વિધિ<br><strong>સમય અને સ્થળની વિગતો ટૂંક સમયમાં</strong>">Wedding ceremony<br><strong>Time and venue to follow</strong></p>
+      </div>
+    </section>
+    <section class="scene scene-final" aria-label="Wedding invitation">
+      <div class="visual"></div><div class="shade"></div><div class="stars"></div>
+      <div class="scene-content">
+        <img class="final-logo" src="./jp-monogram.svg" alt="Jinali and Pranit monogram">
+        <p class="eyebrow" data-en="From our families to yours" data-gu="અમારા પરિવાર તરફથી આપના પરિવારને">From our families to yours</p>
+        <h2 data-en="Awaiting your presence" data-gu="આપની ઉપસ્થિતિની આતુરતાથી રાહ જોઈશું">Awaiting your presence</h2>
+        <p class="script" data-en="Jinali &amp; Pranit" data-gu="જિનાલી અને પ્રણિત">Jinali &amp; Pranit</p>
+        <p class="detail" data-en="Your blessings will make our celebration complete.<br>More details will follow." data-gu="આપના આશીર્વાદથી અમારી ઉજવણી પૂર્ણ થશે.<br>વધુ વિગતો ટૂંક સમયમાં મળશે.">Your blessings will make our celebration complete.<br>More details will follow.</p>
+      </div>
+    </section>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    <nav class="dots" aria-label="Invitation scenes">
+      <button type="button" aria-current="step" data-aria-en="Ganpati blessing" data-aria-gu="ગણપતિ બાપાના આશીર્વાદ" aria-label="Ganpati blessing"></button>
+      <button type="button" data-aria-en="Jinali and Pranit" data-aria-gu="જિનાલી અને પ્રણિત" aria-label="Jinali and Pranit"></button>
+      <button type="button" data-aria-en="Palace doors" data-aria-gu="મહેલના દરવાજા" aria-label="Palace doors"></button>
+      <button type="button" data-aria-en="Wedding details" data-aria-gu="લગ્નની વિગતો" aria-label="Wedding details"></button>
+      <button type="button" data-aria-en="Invitation" data-aria-gu="આમંત્રણ" aria-label="Invitation"></button>
+    </nav>
+    <div class="swipe-cue" id="swipe-cue"><span data-en="Swipe up to continue" data-gu="આગળ જોવા ઉપર સ્વાઇપ કરો">Swipe up to continue</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 9 7 7 7-7"/></svg></div>
+    <div class="progress" aria-hidden="true"><span id="progress-fill"></span></div>
+  </div>
 </main>
 <script>
-(()=>{const scenes=[...document.querySelectorAll('.scene')],dots=[...document.querySelectorAll('.dots a')],music=document.getElementById('music'),song=document.getElementById('song'),lang=document.getElementById('language');let language='en';try{language=localStorage.getItem('wedding-language')||'en'}catch(_){}
-function setLanguage(value){language=value==='gu'?'gu':'en';document.body.lang=language;document.documentElement.lang=language;document.querySelectorAll('[data-en]').forEach(el=>{el.innerHTML=el.dataset[language]});document.querySelectorAll('.loading-language-options button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));lang.textContent=language==='en'?'ગુજરાતી':'English';music.textContent=song.paused?(language==='en'?'♫ PLAY MUSIC':'♫ સંગીત ચાલુ કરો'):(language==='en'?'♫ MUSIC ON':'♫ સંગીત ચાલુ');try{localStorage.setItem('wedding-language',language)}catch(_){}}
-document.querySelectorAll('.loading-language-options button').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.language)));
-lang.addEventListener('click',()=>setLanguage(language==='en'?'gu':'en'));setLanguage(language);
-music.addEventListener('click',async()=>{if(song.paused){try{await song.play()}catch(_){}}else song.pause();music.setAttribute('aria-pressed',String(!song.paused));music.setAttribute('aria-label',song.paused?'Play music':'Pause music');setLanguage(language)});
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){scenes.forEach(s=>s.classList.toggle('active',s===entry.target));dots.forEach((d,i)=>d.classList.toggle('current',scenes[i]===entry.target))}}),{threshold:.55});scenes.forEach(s=>observer.observe(s));
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelectorAll('.petals').forEach(field=>{for(let i=0;i<18;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'%';p.style.setProperty('--dur',10+Math.random()*12+'s');p.style.setProperty('--delay',-Math.random()*20+'s');p.style.setProperty('--drift',Math.random()*130-65+'px');field.append(p)}});
-const intro=document.querySelector('.intro-video'),loading=document.getElementById('loading-screen'),status=document.getElementById('loading-status'),enter=document.getElementById('enter-button');intro.addEventListener('ended',()=>{intro.currentTime=4.7;intro.pause()});
-function mediaReady(element,event){return new Promise(resolve=>{if(element.readyState>=2){resolve();return}element.addEventListener(event,resolve,{once:true});element.addEventListener('error',resolve,{once:true})})}
-const artwork=['ganpati-poster.png','palace-entrance.png','palace-doorway.png','palace-courtyard.png','palace-night-wedding.png'];
-const images=artwork.map(file=>new Promise(resolve=>{const img=new Image();img.onload=resolve;img.onerror=resolve;img.src='./'+file}));
-const ready=Promise.allSettled([...images,mediaReady(intro,'loadeddata'),mediaReady(song,'canplay')]);intro.load();song.load();
-Promise.race([ready,new Promise(resolve=>setTimeout(resolve,12000))]).then(()=>{loading.classList.add('ready');status.dataset.en='Ready when you are';status.dataset.gu='હવે તૈયાર છે';enter.disabled=false;setLanguage(language)});
-enter.addEventListener('click',()=>{document.body.classList.add('entered');loading.setAttribute('aria-hidden','true');enter.disabled=true;song.play().then(()=>{music.setAttribute('aria-pressed','true');music.setAttribute('aria-label','Pause music');setLanguage(language)}).catch(()=>{music.setAttribute('aria-pressed','false');setLanguage(language)});intro.currentTime=0;intro.play().catch(()=>{})});
+(()=>{
+  const journey=document.getElementById('journey');
+  const stage=document.getElementById('stage');
+  const scenes=[...document.querySelectorAll('.scene')];
+  const dots=[...document.querySelectorAll('.dots button')];
+  const petals=document.getElementById('petals');
+  const ganpati=document.querySelector('.ganpati-art');
+  const halo=document.querySelector('.halo');
+  const leftDoor=document.querySelector('.gate-left');
+  const rightDoor=document.querySelector('.gate-right');
+  const progressFill=document.getElementById('progress-fill');
+  const swipeCue=document.getElementById('swipe-cue');
+  const song=document.getElementById('song');
+  const music=document.getElementById('music');
+  const languageButton=document.getElementById('language');
+  const loading=document.getElementById('loading-screen');
+  const status=document.getElementById('loading-status');
+  const enter=document.getElementById('enter-button');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const clamp=(value,min=0,max=1)=>Math.min(max,Math.max(min,value));
+  let language='en';
+  try{language=localStorage.getItem('wedding-language')||'en'}catch(_){}
+  function updateMusic(){
+    const playing=!song.paused;
+    music.setAttribute('aria-pressed',String(playing));
+    music.setAttribute('aria-label',playing?'Pause music':'Play music');
+    music.textContent=playing?(language==='en'?'♫ MUSIC ON':'♫ સંગીત ચાલુ'):(language==='en'?'♫ PLAY MUSIC':'♫ સંગીત ચાલુ કરો');
+  }
+  function setLanguage(value){
+    language=value==='gu'?'gu':'en';
+    document.documentElement.lang=language;
+    document.body.lang=language;
+    document.querySelectorAll('[data-en]').forEach(el=>{el.innerHTML=el.dataset[language]});
+    document.querySelectorAll('[data-aria-en]').forEach(el=>el.setAttribute('aria-label',el.getAttribute('data-aria-'+language)));
+    document.querySelectorAll('.loading-language-options button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
+    languageButton.textContent=language==='en'?'ગુજરાતી':'English';
+    languageButton.setAttribute('aria-label',language==='en'?'Switch to Gujarati':'Switch to English');
+    updateMusic();
+    try{localStorage.setItem('wedding-language',language)}catch(_){}
+  }
+  document.querySelectorAll('.loading-language-options button').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.language)));
+  languageButton.addEventListener('click',()=>setLanguage(language==='en'?'gu':'en'));
+  music.addEventListener('click',async()=>{if(song.paused){try{await song.play()}catch(_){}}else song.pause();updateMusic()});
+  song.addEventListener('play',updateMusic);
+  song.addEventListener('pause',updateMusic);
+  setLanguage(language);
+  function mediaReady(element,event){
+    return new Promise(resolve=>{
+      if(element.readyState>=2){resolve();return}
+      element.addEventListener(event,resolve,{once:true});
+      element.addEventListener('error',resolve,{once:true});
+    });
+  }
+  const artwork=['jp-monogram.svg','ganpati-original.png','palace-entrance.png','palace-doorway.png','palace-courtyard.png','palace-night-wedding.png'];
+  const images=artwork.map(file=>new Promise(resolve=>{const image=new Image();image.onload=resolve;image.onerror=resolve;image.src='./'+file}));
+  song.load();
+  Promise.race([Promise.allSettled([...images,mediaReady(song,'canplay')]),new Promise(resolve=>setTimeout(resolve,10000))]).then(()=>{
+    loading.classList.add('ready');
+    status.dataset.en='Ready when you are';
+    status.dataset.gu='હવે તૈયાર છે';
+    enter.disabled=false;
+    setLanguage(language);
+  });
+  enter.addEventListener('click',()=>{
+    const playing=song.play();
+    document.body.classList.add('entered');
+    loading.setAttribute('aria-hidden','true');
+    enter.disabled=true;
+    playing.then(updateMusic).catch(updateMusic);
+    schedule();
+  });
+  const petalData=Array.from({length:24},(_,i)=>{
+    const el=document.createElement('i');
+    el.className='petal';
+    const x=(i*37.71)%96+2;
+    const seed=(i*.173)%1.28;
+    const size=8+(i*7)%8;
+    el.style.left=x+'%';
+    el.style.width=size+'px';
+    el.style.height=size*1.5+'px';
+    el.style.opacity=String(.32+(i%5)*.12);
+    petals.append(el);
+    return{el,seed,drift:(i%2?1:-1)*(12+i%7*7),spin:75+i%6*51};
+  });
+  function render(){
+    const travel=Math.max(1,journey.offsetHeight-stage.clientHeight);
+    const position=clamp(-journey.getBoundingClientRect().top/travel)*4;
+    const base=Math.min(4,Math.floor(position));
+    const fraction=position-base;
+    const active=Math.round(position);
+    scenes.forEach((scene,i)=>{
+      const alpha=reduced?(i===active?1:0):(i===base?1:i===base+1?fraction:0);
+      scene.style.opacity=String(alpha);
+      scene.style.visibility=alpha>.003?'visible':'hidden';
+      scene.setAttribute('aria-hidden',i===active?'false':'true');
+      const local=clamp(position-i);
+      const visual=scene.querySelector('.visual');
+      visual.style.transform='translate3d(0,'+(-1-local*9).toFixed(2)+'%,0) scale('+(1.04+local*.24).toFixed(3)+')';
+      const content=scene.querySelector('.scene-content');
+      if(content){
+        content.style.transform='translate3d(0,'+(-local*32).toFixed(1)+'px,0)';
+        content.style.opacity=reduced?'1':String(i===base?1-clamp(fraction*1.45):i===base+1?clamp((fraction-.12)*1.55):0);
+      }
+    });
+    const ganpatiTravel=clamp(position);
+    ganpati.style.transform='translateX(-50%) translateY('+(-ganpatiTravel*55).toFixed(1)+'px) scale('+(1+ganpatiTravel*.1).toFixed(3)+')';
+    ganpati.style.opacity=String(1-clamp((position-.55)*1.8));
+    halo.style.transform='translateX(-50%) rotate('+(position*32).toFixed(1)+'deg) scale('+(1+position*.12).toFixed(3)+')';
+    halo.style.opacity=String(1-clamp((position-.35)*1.5));
+    const doorOpen=reduced?1:clamp((position-1.7)/.95);
+    leftDoor.style.transform='translateX('+(-doorOpen*93).toFixed(1)+'%) rotateY('+(-doorOpen*78).toFixed(1)+'deg)';
+    rightDoor.style.transform='translateX('+(doorOpen*93).toFixed(1)+'%) rotateY('+(doorOpen*78).toFixed(1)+'deg)';
+    if(!reduced){
+      const height=stage.clientHeight;
+      petalData.forEach(({el,seed,drift,spin},i)=>{
+        const cycle=((seed+position*.27)%1.28)-.12;
+        const dx=Math.sin(position*1.4+i*2.1)*drift;
+        el.style.transform='translate3d('+dx.toFixed(1)+'px,'+(cycle*height).toFixed(1)+'px,0) rotate('+(position*spin+i*17).toFixed(1)+'deg)';
+      });
+    }
+    dots.forEach((dot,i)=>{if(i===active)dot.setAttribute('aria-current','step');else dot.removeAttribute('aria-current')});
+    progressFill.style.width=(position/4*100).toFixed(2)+'%';
+    swipeCue.style.opacity=position>3.72?'0':'1';
+  }
+  let pending=false;
+  function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;render()})}
+  addEventListener('scroll',schedule,{passive:true});
+  addEventListener('resize',schedule);
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>window.scrollTo({top:journey.offsetTop+i*stage.clientHeight,behavior:reduced?'auto':'smooth'})));
+  render();
 })();
 </script>
 </body>
