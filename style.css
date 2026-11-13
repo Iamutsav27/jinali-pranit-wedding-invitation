@@ -60,13 +60,10 @@ body:not(.entered){overflow:hidden}
 .intro .scene-shade{background:linear-gradient(#07152278,#07152220 40%,#06152290)}
 .intro-content{top:0;left:0;width:100%;height:100%;padding:clamp(62px,9svh,90px) 5% clamp(88px,13svh,130px);justify-content:flex-start;gap:clamp(8px,1.5svh,15px)}
 .invocation{font-size:clamp(1rem,4vw,1.45rem);color:var(--gold)}
-.jp-mark{position:relative;width:clamp(215px,60vw,265px);height:clamp(105px,30vw,135px);display:flex;align-items:flex-start;justify-content:center;isolation:isolate;filter:drop-shadow(0 2px 9px #e8bc7155)}
-.jp-letters{display:block;position:relative;z-index:1;padding-right:.08em;font:400 clamp(6rem,27vw,7.25rem)/1 "Great Vibes Local","Great Vibes","Apple Chancery",cursive;color:#f5dcae;background:linear-gradient(135deg,#fff6d9 5%,#f7d695 38%,#b9874c 68%,#ffe5a8 92%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;transform:rotate(-4deg)}
-.jp-flourish{position:absolute;z-index:0;left:-8%;bottom:-3%;width:116%;height:42%;overflow:visible;fill:none;stroke:#e7bd7e;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round;opacity:.88}
-.jp-flourish path+path{stroke-width:.7;opacity:.65}
-.intro .jp-mark{width:clamp(155px,42vw,180px);height:clamp(75px,21vw,93px)}
-.intro .jp-letters{font-size:clamp(4.3rem,18vw,5.2rem)}
-.intro .jp-flourish{stroke-width:1.8}
+.jp-mark{position:relative;width:min(80vw,280px);height:clamp(125px,35vw,160px);display:flex;align-items:center;justify-content:center;overflow:visible;filter:drop-shadow(0 2px 9px #e8bc7155)}
+.jp-letters{display:block;flex:none;overflow:visible;padding:12px 24px 18px;font:400 clamp(5.5rem,25vw,6.9rem)/1.1 "Great Vibes Local","Great Vibes","Apple Chancery",cursive;color:#f5d69b;text-shadow:0 1px 0 #fff1c5,0 3px 8px #42270b75;white-space:nowrap}
+.intro .jp-mark{width:clamp(160px,47vw,195px);height:clamp(98px,27vw,115px)}
+.intro .jp-letters{font-size:clamp(4.1rem,18vw,5rem);padding:8px 18px 13px}
 .intro-title{max-width:330px;font-size:clamp(2.25rem,8vw,3.5rem);font-weight:500;line-height:.98;letter-spacing:.035em;text-transform:uppercase}
 .intro-content .intro-title{margin-top:auto}
 .intro-date{font-size:clamp(1.2rem,4vw,1.7rem);letter-spacing:.15em;color:var(--gold)}
