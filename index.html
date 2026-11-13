@@ -65,7 +65,7 @@ const artwork=['ganpati-poster.png','palace-entrance.png','palace-doorway.png','
 const images=artwork.map(file=>new Promise(resolve=>{const img=new Image();img.onload=resolve;img.onerror=resolve;img.src='./'+file}));
 const ready=Promise.allSettled([...images,mediaReady(intro,'loadeddata'),mediaReady(song,'canplay')]);intro.load();song.load();
 Promise.race([ready,new Promise(resolve=>setTimeout(resolve,12000))]).then(()=>{loading.classList.add('ready');status.dataset.en='Ready when you are';status.dataset.gu='હવે તૈયાર છે';enter.disabled=false;setLanguage(language)});
-enter.addEventListener('click',()=>{document.body.classList.add('entered');loading.setAttribute('aria-hidden','true');enter.disabled=true;intro.currentTime=0;intro.play().catch(()=>{});song.play().then(()=>{music.setAttribute('aria-pressed','true');music.setAttribute('aria-label','Pause music');setLanguage(language)}).catch(()=>{music.setAttribute('aria-pressed','false');setLanguage(language)})});
+enter.addEventListener('click',()=>{document.body.classList.add('entered');loading.setAttribute('aria-hidden','true');enter.disabled=true;song.play().then(()=>{music.setAttribute('aria-pressed','true');music.setAttribute('aria-label','Pause music');setLanguage(language)}).catch(()=>{music.setAttribute('aria-pressed','false');setLanguage(language)});intro.currentTime=0;intro.play().catch(()=>{})});
 })();
 </script>
 </body>
