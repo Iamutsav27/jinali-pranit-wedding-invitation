@@ -1,3 +1,4 @@
+@font-face{font-family:"Great Vibes Local";src:url("./assets/great-vibes.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
 :root{--navy:#071522;--navy2:#10253a;--gold:#f0d29a;--gold-deep:#b98b49;--ivory:#fff9ea;--serif:"Cormorant Garamond",Georgia,serif;--gu:"Noto Serif Gujarati",Georgia,serif}
 *{box-sizing:border-box}
 img[hidden]{display:none}
@@ -59,11 +60,13 @@ body:not(.entered){overflow:hidden}
 .intro .scene-shade{background:linear-gradient(#07152278,#07152220 40%,#06152290)}
 .intro-content{top:0;left:0;width:100%;height:100%;padding:clamp(62px,9svh,90px) 5% clamp(88px,13svh,130px);justify-content:flex-start;gap:clamp(8px,1.5svh,15px)}
 .invocation{font-size:clamp(1rem,4vw,1.45rem);color:var(--gold)}
-.monogram{position:relative;width:clamp(105px,26vw,145px);height:clamp(105px,26vw,145px);border:1px solid #f6dba8b8;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:1px;color:var(--ivory);font-size:clamp(3.1rem,12vw,4.6rem);line-height:1;background:#07152233;box-shadow:0 0 0 7px #f6dba820,0 0 30px #f6dba850;backdrop-filter:blur(2px)}
-.intro .monogram{width:clamp(78px,20vw,105px);height:clamp(78px,20vw,105px);font-size:clamp(2.3rem,9vw,3.3rem)}
-.monogram:before,.monogram:after{content:"✦";position:absolute;font-size:13px;color:var(--gold);left:50%;transform:translateX(-50%)}
-.monogram:before{top:-8px}.monogram:after{bottom:-8px}
-.monogram i{align-self:center;font:normal clamp(1rem,4vw,1.3rem) "Great Vibes",cursive;color:var(--gold)}
+.jp-mark{position:relative;width:clamp(215px,60vw,265px);height:clamp(105px,30vw,135px);display:flex;align-items:flex-start;justify-content:center;isolation:isolate;filter:drop-shadow(0 2px 9px #e8bc7155)}
+.jp-letters{display:block;position:relative;z-index:1;padding-right:.08em;font:400 clamp(6rem,27vw,7.25rem)/1 "Great Vibes Local","Great Vibes","Apple Chancery",cursive;color:#f5dcae;background:linear-gradient(135deg,#fff6d9 5%,#f7d695 38%,#b9874c 68%,#ffe5a8 92%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;transform:rotate(-4deg)}
+.jp-flourish{position:absolute;z-index:0;left:-8%;bottom:-3%;width:116%;height:42%;overflow:visible;fill:none;stroke:#e7bd7e;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round;opacity:.88}
+.jp-flourish path+path{stroke-width:.7;opacity:.65}
+.intro .jp-mark{width:clamp(155px,42vw,180px);height:clamp(75px,21vw,93px)}
+.intro .jp-letters{font-size:clamp(4.3rem,18vw,5.2rem)}
+.intro .jp-flourish{stroke-width:1.8}
 .intro-title{max-width:330px;font-size:clamp(2.25rem,8vw,3.5rem);font-weight:500;line-height:.98;letter-spacing:.035em;text-transform:uppercase}
 .intro-content .intro-title{margin-top:auto}
 .intro-date{font-size:clamp(1.2rem,4vw,1.7rem);letter-spacing:.15em;color:var(--gold)}
@@ -132,7 +135,7 @@ body:not(.entered){overflow:hidden}
 .loading-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;text-align:center;padding:22px;background:radial-gradient(ellipse at 50% 35%,#34475a,#091b2d 58%,#061522);transition:opacity .7s,visibility .7s}
 .loading-screen:before{content:"";position:absolute;inset:0;opacity:.2;background:url("./ganpati-poster.png") center/cover;mask-image:linear-gradient(transparent 5%,#000 32%,transparent 90%)}
 .loading-content{position:relative;display:flex;flex-direction:column;align-items:center;gap:clamp(9px,2svh,18px);width:min(100%,390px)}
-.loading-crest{display:grid;place-items:center;width:80px;height:80px;border:1px solid #e9c9869e;border-radius:50%;box-shadow:0 0 0 7px #e9c9861e;color:var(--gold);font-size:35px}
+.jp-mark-loading{margin-bottom:clamp(2px,1svh,8px)}
 .loading-content h2{font-size:clamp(2.5rem,10vw,3.7rem);font-weight:500;line-height:1}
 .loading-date{font-size:clamp(1.25rem,4vw,1.7rem);color:var(--gold)}
 .language-label{font-size:clamp(1.1rem,4vw,1.3rem);margin:8px 0 0}
