@@ -1,74 +1,142 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#061522">
-<meta name="description" content="Jinali Kikani and Pranit Malvania invite you to celebrate their wedding on 26 January 2027.">
-<title>Jinali & Pranit | Wedding Invitation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#061522;--gold:#f4d294;--ivory:#fff9ed;--font:"Cormorant Garamond",Georgia,serif;--gu:"Noto Serif Gujarati",serif}
-*{box-sizing:border-box}html{scroll-snap-type:y mandatory;scroll-behavior:smooth;background:var(--navy)}body{margin:0;color:var(--ivory);background:var(--navy);font-family:var(--font);overflow-x:hidden}button{font:inherit}
-.story{max-width:620px;margin:auto;box-shadow:0 0 90px #0009}.scene{height:100svh;min-height:560px;position:relative;overflow:hidden;scroll-snap-align:start;scroll-snap-stop:always;isolation:isolate;background:var(--navy)}
-.art,.shade,.sparkles,.petals,.doors{position:absolute;inset:0}.art{z-index:-4;background-size:cover;background-position:center;transform:scale(1.07);transition:transform 1.7s}.scene.active .art{transform:scale(1)}
-.shade{z-index:-3;background:linear-gradient(180deg,#0615227a,transparent 55%,#06152245)}.sparkles{z-index:-2;pointer-events:none;background-image:radial-gradient(2px 2px at 17% 30%,#fff 90%,transparent),radial-gradient(2px 2px at 79% 19%,#f9dda1 90%,transparent),radial-gradient(1px 1px at 43% 67%,#fff 90%,transparent);background-size:280px 340px;animation:twinkle 4s ease-in-out infinite alternate;opacity:.6}
-@keyframes twinkle{to{opacity:.2;transform:translateY(8px)}}.petals{z-index:8;pointer-events:none}.petal{position:absolute;top:-8%;width:11px;height:18px;border-radius:75% 15% 70% 20%;background:linear-gradient(135deg,#ffb6b6,#c72953 75%);opacity:.8;animation:fall var(--dur,12s) linear infinite;animation-delay:var(--delay,0s)}@keyframes fall{to{transform:translate(var(--drift,40px),115svh) rotate(690deg)}}
-.overlay{position:relative;z-index:4;text-align:center;padding:0 25px;max-width:570px;margin:auto;display:flex;flex-direction:column;align-items:center}.overline{font-size:clamp(12px,3.4vw,15px);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);text-shadow:0 2px 6px #000}h1,h2,p{margin:0}.ornament{color:var(--gold);font-size:25px;line-height:1;margin:10px 0}
-.intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;background:var(--navy);z-index:-4}.intro .overlay{padding-top:clamp(58px,9svh,100px);height:100%;justify-content:space-between;padding-bottom:55px}.intro-title{font-size:clamp(24px,7vw,36px);letter-spacing:.13em;line-height:1.1;text-transform:uppercase;text-shadow:0 2px 12px #000}.invocation{font-size:clamp(17px,5vw,24px);color:var(--gold);text-shadow:0 2px 10px #000}
-.swipe-hint{display:flex;flex-direction:column;align-items:center;gap:2px;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-family:Georgia,serif;color:#fff4d5;text-shadow:0 2px 9px #000;animation:bob 2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(7px)}}.swipe-hint svg{width:22px;height:22px}
-.names .art{background-image:url("./palace-entrance.png")}.names .overlay{padding-top:clamp(110px,18svh,185px)}.names h1{font-size:clamp(47px,13vw,82px);font-weight:500;line-height:.87;text-shadow:0 2px 16px #000}.names h1 span{display:block}.names h1 .and{font-family:"Great Vibes",cursive;text-transform:none;color:var(--gold);font-size:.75em;line-height:1.2}.script{font-family:"Great Vibes",cursive;color:var(--gold);font-size:clamp(43px,11vw,65px);font-weight:400;line-height:1.05;text-shadow:0 2px 14px #000}.names .script{margin-top:18px}.date-line{font-size:clamp(20px,5.5vw,29px);margin-top:16px;letter-spacing:.05em;text-shadow:0 2px 10px #000}
-.names .swipe-hint,.door-scene .swipe-hint,.wedding .swipe-hint{position:absolute;bottom:25px;left:0;right:0}
-.door-scene .art{background-image:url("./palace-doorway.png")}.door-scene .shade{background:linear-gradient(180deg,#061522b5 0%,#06152218 48%,transparent)}.door-scene .overlay{padding-top:clamp(58px,9svh,110px)}.door-scene h2{font-size:clamp(29px,7.5vw,46px);font-weight:500;line-height:1.05;text-shadow:0 2px 12px #000}.copy{max-width:385px;font-size:clamp(20px,5vw,25px);line-height:1.2;text-shadow:0 2px 10px #000;margin-top:12px}
-.doors{z-index:6;display:flex;pointer-events:none;perspective:800px}.door{width:50%;height:100%;background:repeating-linear-gradient(90deg,#815b34 0 4px,#cda264 6px 13px,#76502c 15px 17px);border:9px ridge #d8ad6b;box-shadow:inset 0 0 65px #251406,0 0 20px #000;position:relative;transition:transform 1.55s cubic-bezier(.32,.7,.18,1);transition-delay:.2s}.door::before{content:"";position:absolute;top:15%;bottom:15%;left:14%;right:14%;border:5px double #f0cf8e;border-radius:42% 42% 3% 3%;box-shadow:inset 0 0 20px #2c190b}.door::after{content:"";position:absolute;top:48%;width:14px;height:24px;background:#e9c685;border-radius:50%;box-shadow:0 0 10px #0008}.door-left::after{right:4%}.door-right::after{left:4%}.door-scene.active .door-left{transform:translateX(-108%) rotateY(-23deg)}.door-scene.active .door-right{transform:translateX(108%) rotateY(23deg)}
-.wedding .art,.closing .art{background-image:url("./palace-courtyard.png")}.wedding .shade,.closing .shade{background:linear-gradient(180deg,#061522a8,#0615225c 43%,transparent 69%)}.wedding .overlay{padding-top:clamp(155px,21svh,220px)}.wedding h2{font-size:clamp(28px,7vw,42px);font-weight:500;letter-spacing:.07em;text-transform:uppercase;text-shadow:0 2px 12px #000}.day-number{font-size:clamp(83px,24vw,135px);font-weight:400;line-height:.83;color:var(--gold);text-shadow:0 3px 15px #000}.month{font-size:clamp(24px,6vw,34px);letter-spacing:.12em;text-transform:uppercase;text-shadow:0 2px 12px #000}.detail{font-size:clamp(19px,5vw,26px);line-height:1.24;max-width:450px;text-shadow:0 2px 12px #000}.detail strong{color:var(--gold);font-weight:600}.wedding .detail{margin-top:18px}
-.closing .art{background-image:url("./palace-night-wedding.png")}.closing .overlay{padding-top:clamp(155px,23svh,235px)}.closing h2{font-size:clamp(25px,7vw,40px);line-height:1.07;text-transform:uppercase;letter-spacing:.06em;text-shadow:0 2px 14px #000}.closing .script{margin:10px 0 15px}.closing .detail{max-width:390px}
-.controls{position:fixed;z-index:30;top:max(12px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(100%,620px);display:flex;justify-content:space-between;padding:0 14px;pointer-events:none}.controls button{pointer-events:auto;color:#fff7df;background:#061522b0;border:1px solid #e7c9879e;border-radius:99px;padding:9px 13px;font:600 11px/1 Georgia,serif;letter-spacing:.1em;backdrop-filter:blur(8px);min-height:37px}.controls button:focus-visible{outline:2px solid #fff}
-.dots{position:fixed;z-index:25;right:max(12px,calc((100vw - 620px)/2 + 11px));top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px}.dots a{width:7px;height:7px;border-radius:50%;display:block;background:#fff8;border:1px solid #fff9;transition:transform .3s,background .3s}.dots a.current{background:var(--gold);transform:scale(1.6)}
-.fade{opacity:0;transform:translateY(25px);transition:opacity .9s ease,transform .9s ease}.scene.active .fade{opacity:1;transform:translateY(0)}.scene.active .fade:nth-child(2){transition-delay:.16s}.scene.active .fade:nth-child(3){transition-delay:.3s}.scene.active .fade:nth-child(4){transition-delay:.45s}
-body[lang="gu"] .overlay{font-family:var(--gu)}body[lang="gu"] .script{font-family:var(--gu);font-size:clamp(29px,7vw,43px)}body[lang="gu"] .names h1{font-size:clamp(42px,11vw,68px);line-height:1.28}body[lang="gu"] .names h1 .and{font-family:var(--gu);font-size:.55em}body[lang="gu"] .overline{letter-spacing:.03em}
-@media(max-height:690px){.wedding .overlay,.closing .overlay{padding-top:17svh}.names .overlay{padding-top:15svh}.door-scene .overlay{padding-top:7svh}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sparkles,.petal,.swipe-hint{animation:none}.art,.fade,.door{transition:none}.door-scene .door{display:none}.fade{opacity:1;transform:none}}
-.intro .overlay>div:nth-child(2){display:none}
-.door-scene .overlay{padding-top:75svh}
-.door-scene .overlay h2,.door-scene .overlay .copy{display:none}
-.loading-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:30px;text-align:center;background:radial-gradient(circle at 50% 35%,#223b4b 0%,#091b2c 42%,#061522 75%);transition:opacity .7s ease,visibility .7s ease}
-.loading-screen::before{content:"";position:absolute;inset:0;opacity:.28;background:url("./ganpati-poster.png") center/cover no-repeat;mask-image:linear-gradient(transparent 5%,#000 35%,transparent 85%)}
-.loading-content{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px;max-width:390px}.loading-mark{color:var(--gold);font-size:34px}.loading-content h2{font-size:clamp(36px,9vw,57px);font-weight:500;line-height:1.05}.loading-content p{font-size:20px;line-height:1.25}.loading-status{color:var(--gold);min-height:26px}.loading-spinner{width:36px;height:36px;border:2px solid #f4d29455;border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-.loading-language{display:flex;flex-direction:column;align-items:center;gap:10px;margin:5px 0}.loading-language-label{font-size:16px;color:var(--ivory)}.loading-language-options{display:flex;gap:10px}.loading-language-options button{min-width:120px;min-height:44px;padding:9px 15px;border:1px solid #f4d294a8;border-radius:99px;background:#061522b8;color:var(--ivory);font:600 17px/1.2 var(--font);cursor:pointer}.loading-language-options button[aria-pressed="true"]{background:var(--gold);color:var(--navy);border-color:var(--gold)}.loading-language-options button[data-language="gu"]{font-family:var(--gu);font-size:15px}.loading-language-options button:focus-visible{outline:3px solid white;outline-offset:3px}body[lang="gu"] .loading-content{font-family:var(--gu)}
-.enter-button{min-height:48px;padding:12px 25px;border:1px solid var(--gold);border-radius:99px;background:var(--gold);color:var(--navy);font:600 16px/1.2 var(--font);letter-spacing:.04em;cursor:pointer}.enter-button:disabled{display:none}.enter-button:focus-visible{outline:3px solid white;outline-offset:3px}.loading-screen.ready .loading-spinner{display:none}.loading-screen.ready .loading-status{color:var(--ivory)}body.entered .loading-screen{opacity:0;visibility:hidden;pointer-events:none}body:not(.entered){overflow:hidden}body:not(.entered) .controls,body:not(.entered) .dots{visibility:hidden}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071522">
+  <meta name="description" content="Jinali Kikani and Pranit Malvania invite you to their wedding on 26 January 2027.">
+  <title>Jinali &amp; Pranit | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
-<body lang="en">
-<div class="loading-screen" id="loading-screen" role="dialog" aria-modal="true" aria-labelledby="loading-title"><div class="loading-content"><span class="loading-mark" aria-hidden="true">✦</span><h2 id="loading-title" data-en="Jinali <span style='color:var(--gold)'>&amp;</span> Pranit" data-gu="જિનાલી <span style='color:var(--gold)'>અને</span> પ્રણિત">Jinali <span style="color:var(--gold)">&amp;</span> Pranit</h2><p data-en="A celebration is about to begin" data-gu="ઉજવણીની શરૂઆત થવાની છે">A celebration is about to begin</p><div class="loading-language" role="group" aria-labelledby="loading-language-label"><p class="loading-language-label" id="loading-language-label" data-en="Choose your language" data-gu="ભાષા પસંદ કરો">Choose your language</p><div class="loading-language-options"><button type="button" data-language="en" aria-pressed="true">English</button><button type="button" data-language="gu" aria-pressed="false">ગુજરાતી</button></div></div><div class="loading-spinner" aria-hidden="true"></div><p class="loading-status" id="loading-status" role="status" data-en="Preparing your invitation…" data-gu="આમંત્રણ તૈયાર થઈ રહ્યું છે…">Preparing your invitation…</p><button class="enter-button" id="enter-button" type="button" disabled data-en="Open invitation with music" data-gu="સંગીત સાથે આમંત્રણ ખોલો">Open invitation with music</button></div></div>
-<audio id="song" src="./wedding-song.m4a" preload="auto" loop></audio>
-<div class="controls" aria-label="Invitation controls"><button id="language" type="button" aria-label="Switch language">ગુજરાતી</button><button id="music" type="button" aria-label="Play music" aria-pressed="false">♫ PLAY MUSIC</button></div>
-<nav class="dots" aria-label="Invitation scenes"><a href="#ganpati" aria-label="Ganpati" class="current"></a><a href="#couple" aria-label="Couple"></a><a href="#doors" aria-label="Door reveal"></a><a href="#wedding" aria-label="Wedding details"></a><a href="#invitation" aria-label="Invitation"></a></nav>
-<main class="story">
-<section class="scene intro active" id="ganpati" aria-label="Ganpati blessing"><video class="intro-video" src="./ganpati-intro.mp4" poster="./ganpati-poster.png" muted playsinline preload="auto" aria-hidden="true"></video><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="invocation fade" data-en="॥ Shree Ganeshaya Namah ॥" data-gu="॥ શ્રી ગણેશાય નમઃ ॥">॥ Shree Ganeshaya Namah ॥</p><div><h1 class="intro-title fade" data-en="An invitation of love" data-gu="પ્રેમભર્યું આમંત્રણ">An invitation of love</h1><p class="ornament">❧</p></div><div class="swipe-hint"><span data-en="Swipe up to enter" data-gu="આગળ જોવા ઉપર સ્વાઇપ કરો">Swipe up to enter</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div></div></section>
-<section class="scene names" id="couple" aria-label="The couple"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="Together with their families" data-gu="પરિવારના આશીર્વાદ સાથે">Together with their families</p><h1 class="fade"><span data-en="Jinali" data-gu="જિનાલી">Jinali</span><span class="and" data-en="&amp;" data-gu="અને">&amp;</span><span data-en="Pranit" data-gu="પ્રણિત">Pranit</span></h1><p class="script fade" data-en="Decided on forever" data-gu="સદા માટે એક થયા">Decided on forever</p><p class="date-line fade" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p></div><div class="swipe-hint"><span data-en="Swipe to open the doors" data-gu="દરવાજા ખોલવા સ્વાઇપ કરો">Swipe to open the doors</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div><div class="petals"></div></section>
-<section class="scene door-scene" id="doors" aria-label="Doors opening to the celebration"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="With the blessings of Ganpati Bappa" data-gu="ગણપતિ બાપાના આશીર્વાદથી">With the blessings of Ganpati Bappa</p><h2 class="fade" data-en="Two hearts, one beautiful beginning" data-gu="બે હૃદય, એક સુંદર શરૂઆત">Two hearts, one beautiful beginning</h2><p class="copy fade" data-en="The Kikani and Malvania families invite you to share in this joyful celebration." data-gu="કિકાણી અને માલવાણિયા પરિવાર આ આનંદમય પ્રસંગે આપને હાર્દિક આમંત્રણ આપે છે.">The Kikani and Malvania families invite you to share in this joyful celebration.</p></div><div class="doors" aria-hidden="true"><div class="door door-left"></div><div class="door door-right"></div></div><div class="swipe-hint"><span data-en="Continue to the wedding" data-gu="લગ્નની વિગતો જોવા આગળ વધો">Continue to the wedding</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div><div class="petals"></div></section>
-<section class="scene wedding" id="wedding" aria-label="Wedding date and details"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="A day to remember" data-gu="યાદગાર દિવસ">A day to remember</p><h2 class="fade" data-en="Tuesday" data-gu="મંગળવાર">Tuesday</h2><div class="day-number fade" data-en="26" data-gu="૨૬">26</div><p class="month fade" data-en="January 2027" data-gu="જાન્યુઆરી ૨૦૨૭">January 2027</p><p class="detail fade" data-en="Wedding ceremony<br><strong>Time and venue to follow</strong>" data-gu="લગ્ન વિધિ<br><strong>સમય અને સ્થળની વિગતો ટૂંક સમયમાં</strong>">Wedding ceremony<br><strong>Time and venue to follow</strong></p></div><div class="swipe-hint"><span data-en="One more swipe" data-gu="એક સ્વાઇપ વધુ">One more swipe</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 9 7 7 7-7"/></svg></div><div class="petals"></div></section>
-<section class="scene closing" id="invitation" aria-label="Awaiting your presence"><div class="art"></div><div class="shade"></div><div class="sparkles"></div><div class="overlay"><p class="overline fade" data-en="From our families to yours" data-gu="અમારા પરિવાર તરફથી આપના પરિવારને">From our families to yours</p><h2 class="fade" data-en="Awaiting your presence" data-gu="આપની ઉપસ્થિતિની આતુરતાથી રાહ જોઈશું">Awaiting your presence</h2><p class="script fade" data-en="Jinali &amp; Pranit" data-gu="જિનાલી અને પ્રણિત">Jinali &amp; Pranit</p><p class="detail fade" data-en="Your blessings will make our celebration complete.<br>More details will follow." data-gu="આપના આશીર્વાદથી અમારી ઉજવણી પૂર્ણ થશે.<br>વધુ વિગતો ટૂંક સમયમાં મળશે.">Your blessings will make our celebration complete.<br>More details will follow.</p></div><div class="petals"></div></section>
-</main>
-<script>
-(()=>{const scenes=[...document.querySelectorAll('.scene')],dots=[...document.querySelectorAll('.dots a')],music=document.getElementById('music'),song=document.getElementById('song'),lang=document.getElementById('language');let language='en';try{language=localStorage.getItem('wedding-language')||'en'}catch(_){}
-function setLanguage(value){language=value==='gu'?'gu':'en';document.body.lang=language;document.documentElement.lang=language;document.querySelectorAll('[data-en]').forEach(el=>{el.innerHTML=el.dataset[language]});document.querySelectorAll('.loading-language-options button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));lang.textContent=language==='en'?'ગુજરાતી':'English';music.textContent=song.paused?(language==='en'?'♫ PLAY MUSIC':'♫ સંગીત ચાલુ કરો'):(language==='en'?'♫ MUSIC ON':'♫ સંગીત ચાલુ');try{localStorage.setItem('wedding-language',language)}catch(_){}}
-document.querySelectorAll('.loading-language-options button').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.language)));
-lang.addEventListener('click',()=>setLanguage(language==='en'?'gu':'en'));setLanguage(language);
-music.addEventListener('click',async()=>{if(song.paused){try{await song.play()}catch(_){}}else song.pause();music.setAttribute('aria-pressed',String(!song.paused));music.setAttribute('aria-label',song.paused?'Play music':'Pause music');setLanguage(language)});
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){scenes.forEach(s=>s.classList.toggle('active',s===entry.target));dots.forEach((d,i)=>d.classList.toggle('current',scenes[i]===entry.target))}}),{threshold:.55});scenes.forEach(s=>observer.observe(s));
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelectorAll('.petals').forEach(field=>{for(let i=0;i<18;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'%';p.style.setProperty('--dur',10+Math.random()*12+'s');p.style.setProperty('--delay',-Math.random()*20+'s');p.style.setProperty('--drift',Math.random()*130-65+'px');field.append(p)}});
-const intro=document.querySelector('.intro-video'),loading=document.getElementById('loading-screen'),status=document.getElementById('loading-status'),enter=document.getElementById('enter-button');intro.addEventListener('ended',()=>{intro.currentTime=4.7;intro.pause()});
-function mediaReady(element,event){return new Promise(resolve=>{if(element.readyState>=2){resolve();return}element.addEventListener(event,resolve,{once:true});element.addEventListener('error',resolve,{once:true})})}
-const artwork=['ganpati-poster.png','palace-entrance.png','palace-doorway.png','palace-courtyard.png','palace-night-wedding.png'];
-const images=artwork.map(file=>new Promise(resolve=>{const img=new Image();img.onload=resolve;img.onerror=resolve;img.src='./'+file}));
-const ready=Promise.allSettled([...images,mediaReady(intro,'loadeddata'),mediaReady(song,'canplay')]);intro.load();song.load();
-Promise.race([ready,new Promise(resolve=>setTimeout(resolve,12000))]).then(()=>{loading.classList.add('ready');status.dataset.en='Ready when you are';status.dataset.gu='હવે તૈયાર છે';enter.disabled=false;setLanguage(language)});
-enter.addEventListener('click',()=>{document.body.classList.add('entered');loading.setAttribute('aria-hidden','true');enter.disabled=true;song.play().then(()=>{music.setAttribute('aria-pressed','true');music.setAttribute('aria-label','Pause music');setLanguage(language)}).catch(()=>{music.setAttribute('aria-pressed','false');setLanguage(language)});intro.currentTime=0;intro.play().catch(()=>{})});
-})();
-</script>
+<body>
+  <div class="loading-screen" id="loading-screen" role="dialog" aria-modal="true" aria-labelledby="loading-title">
+    <div class="loading-content">
+      <div class="loading-crest" aria-hidden="true">ॐ</div>
+      <p class="eyebrow" data-en="A celebration of love" data-gu="પ્રેમનો ઉત્સવ">A celebration of love</p>
+      <h2 id="loading-title" data-en="Jinali &amp; Pranit" data-gu="જિનાલી અને પ્રણિત">Jinali &amp; Pranit</h2>
+      <p class="loading-date" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p>
+      <p class="language-label" data-en="Choose your language" data-gu="ભાષા પસંદ કરો">Choose your language</p>
+      <div class="language-options" role="group" aria-label="Invitation language">
+        <button type="button" data-language="en" aria-pressed="true">English</button>
+        <button type="button" data-language="gu" aria-pressed="false">ગુજરાતી</button>
+      </div>
+      <div class="loading-spinner" aria-hidden="true"></div>
+      <p class="loading-status" id="loading-status" role="status" data-en="Preparing your invitation…" data-gu="આમંત્રણ તૈયાર થઈ રહ્યું છે…">Preparing your invitation…</p>
+      <button class="enter-button" id="enter-button" type="button" disabled data-en="Open invitation with music" data-gu="સંગીત સાથે આમંત્રણ ખોલો">Open invitation with music</button>
+    </div>
+  </div>
+  <audio id="song" src="./wedding-song.m4a" preload="auto" loop></audio>
+  <div class="controls" aria-label="Invitation controls">
+    <button id="language" type="button" aria-label="Switch language">ગુજરાતી</button>
+    <button id="music" type="button" aria-label="Play music" aria-pressed="false">♫ PLAY MUSIC</button>
+  </div>
+  <nav class="dots" aria-label="Invitation scenes">
+    <a href="#ganpati" aria-label="Ganpati blessing" class="current"></a>
+    <a href="#couple" aria-label="Jinali and Pranit"></a>
+    <a href="#doors" aria-label="Palace gateway"></a>
+    <a href="#wedding" aria-label="Wedding details"></a>
+    <a href="#invitation" aria-label="Invitation closing"></a>
+  </nav>
+  <main class="story">
+    <section class="scene intro active" id="ganpati" aria-label="Ganpati blessing">
+      <video class="intro-video" src="./ganpati-intro.mp4" poster="./ganpati-poster.png" muted playsinline preload="auto" aria-hidden="true"></video>
+      <div class="walking-track cover-walk" aria-hidden="true"><img data-slot="couple-walking" src="./assets/couple-walking.png" alt=""></div>
+      <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone intro-content">
+        <p class="invocation reveal" data-en="॥ Shree Ganeshaya Namah ॥" data-gu="॥ શ્રી ગણેશાય નમઃ ॥">॥ Shree Ganeshaya Namah ॥</p>
+        <div class="monogram" aria-label="J and P monogram"><span>J</span><i>&amp;</i><span>P</span></div>
+        <h1 class="intro-title reveal" data-en="An invitation of love" data-gu="પ્રેમભર્યું આમંત્રણ">An invitation of love</h1>
+        <p class="intro-date reveal" data-en="26 · 01 · 2027" data-gu="૨૬ · ૦૧ · ૨૦૨૭">26 · 01 · 2027</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Swipe up to enter" data-gu="આગળ જોવા ઉપર સ્વાઇપ કરો">Swipe up to enter</span><span class="chevron">⌄</span></div>
+    </section>
+    <section class="scene families" id="couple" aria-label="The couple and their families">
+      <div class="sky sky-night"></div>
+      <div class="artwork palace-art" data-art="palace">
+        <img class="layer layer-far" data-slot="palace-far" src="./assets/palace-far.png" alt="" loading="lazy">
+        <img class="layer layer-main" data-slot="palace-main" src="./assets/palace-main.png" alt="" loading="lazy">
+        <div class="terrace-lights" aria-hidden="true"></div>
+        <div class="walking-track"><img data-slot="couple-walking" src="./assets/couple-walking.png" alt="" loading="lazy"></div>
+        <img class="layer layer-front" data-slot="palace-front" src="./assets/palace-front.png" alt="" loading="lazy">
+      </div>
+      <canvas class="fireworks" aria-hidden="true"></canvas>
+      <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone families-content">
+        <p class="eyebrow reveal" data-en="With Ganpati Bappa's blessings" data-gu="ગણપતિ બાપાના આશીર્વાદ સાથે">With Ganpati Bappa's blessings</p>
+        <p class="families-request reveal" data-en="Together with their families, we request the honour of your presence at the wedding of" data-gu="અમારા પરિવાર સાથે, લગ્નના શુભ પ્રસંગે આપની ઉપસ્થિતિની હાર્દિક વિનંતી છે">Together with their families, we request the honour of your presence at the wedding of</p>
+        <h2 class="couple-names"><span class="reveal" data-en="Jinali" data-gu="જિનાલી">Jinali</span><em class="reveal" data-en="&amp;" data-gu="અને">&amp;</em><span class="reveal" data-en="Pranit" data-gu="પ્રણિત">Pranit</span></h2>
+        <p class="small-date reveal" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Swipe to the palace" data-gu="મહેલ તરફ આગળ વધો">Swipe to the palace</span><span class="chevron">⌄</span></div>
+      <div class="petals" aria-hidden="true"></div>
+    </section>
+    <section class="scene door-scene" id="doors" aria-label="Doors opening to the celebration">
+      <div class="door-stage">
+        <div class="sky sky-gateway"></div><div class="pathway" aria-hidden="true"></div>
+        <div class="gateway-world" aria-hidden="true">
+          <img src="./palace-doorway.png" alt="" loading="lazy">
+          <div class="gate-leaf gate-left"></div><div class="gate-leaf gate-right"></div>
+        </div>
+        <canvas class="fireworks" aria-hidden="true"></canvas>
+        <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+        <div class="content-zone door-content">
+          <p class="eyebrow reveal" data-en="A beautiful beginning awaits" data-gu="સુંદર શરૂઆત આપની રાહ જુએ છે">A beautiful beginning awaits</p>
+          <h2 class="reveal" data-en="Enter our celebration" data-gu="અમારી ઉજવણીમાં પધારો">Enter our celebration</h2>
+          <p class="door-copy reveal" data-en="Step through the palace gates and celebrate with us." data-gu="મહેલના દ્વારથી પ્રવેશી અમારી સાથે ઉજવણી કરો.">Step through the palace gates and celebrate with us.</p>
+        </div>
+        <div class="swipe-hint"><span data-en="Swipe to open the gates" data-gu="દ્વાર ખોલવા સ્વાઇપ કરો">Swipe to open the gates</span><span class="chevron">⌄</span></div>
+      </div>
+    </section>
+    <section class="scene wedding" id="wedding" aria-label="Wedding date and details">
+      <div class="sky sky-wedding"></div>
+      <div class="artwork garden-art" data-art="garden">
+        <img class="layer layer-far" data-slot="palace-far" src="./assets/palace-far.png" alt="" loading="lazy">
+        <img class="layer layer-main" data-slot="palace-main" src="./assets/palace-main.png" alt="" loading="lazy">
+        <div class="golden-path" aria-hidden="true"></div>
+        <img class="layer layer-front" data-slot="palace-front" src="./assets/palace-front.png" alt="" loading="lazy">
+      </div>
+      <div class="chandelier chandelier-left" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="chandelier chandelier-right" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <canvas class="fireworks" aria-hidden="true"></canvas>
+      <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone details-content">
+        <p class="eyebrow reveal" data-en="Save the date" data-gu="તારીખ યાદ રાખજો">Save the date</p>
+        <h2 class="weekday reveal" data-en="Tuesday" data-gu="મંગળવાર">Tuesday</h2>
+        <div class="day-number reveal" data-en="26th" data-gu="૨૬મી">26th</div>
+        <p class="month reveal" data-en="January '27" data-gu="જાન્યુઆરી '૨૭">January '27</p>
+        <div class="date-divider reveal" aria-hidden="true">✧</div>
+        <p class="ceremony reveal" data-en="Wedding Ceremony" data-gu="લગ્ન વિધિ">Wedding Ceremony</p>
+        <p class="venue reveal" data-en="Time and venue to follow" data-gu="સમય અને સ્થળની વિગતો ટૂંક સમયમાં">Time and venue to follow</p>
+      </div>
+      <div class="swipe-hint"><span data-en="One more swipe" data-gu="એક સ્વાઇપ વધુ">One more swipe</span><span class="chevron">⌄</span></div>
+      <div class="petals" aria-hidden="true"></div>
+    </section>
+    <section class="scene closing" id="invitation" aria-label="Awaiting your presence">
+      <div class="sky sky-closing"></div>
+      <div class="artwork mandap-art" data-art="mandap">
+        <img class="layer layer-far" data-slot="palace-far" src="./assets/palace-far.png" alt="" loading="lazy">
+        <img class="layer layer-mandap" data-slot="mandap-garden" src="./assets/mandap-garden.png" alt="" loading="lazy">
+        <img class="layer layer-front" data-slot="palace-front" src="./assets/palace-front.png" alt="" loading="lazy">
+        <div class="candles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone closing-content">
+        <p class="eyebrow reveal" data-en="With love and blessings" data-gu="પ્રેમ અને આશીર્વાદ સાથે">With love and blessings</p>
+        <h2 class="reveal" data-en="Awaiting your presence" data-gu="આપની ઉપસ્થિતિની આતુરતા">Awaiting your presence</h2>
+        <p class="family-script reveal" data-en="Kikani &amp; Malvania Family" data-gu="કિકાણી અને માલવાણિયા પરિવાર">Kikani &amp; Malvania Family</p>
+        <p class="closing-copy reveal" data-en="Your blessings will make our celebration complete." data-gu="આપના આશીર્વાદથી અમારી ઉજવણી પૂર્ણ થશે.">Your blessings will make our celebration complete.</p>
+        <div class="closing-actions reveal">
+          <button type="button" id="save-date" data-en="Save the date" data-gu="તારીખ સાચવો">Save the date</button>
+          <button type="button" id="share-invite" data-en="Share invitation" data-gu="આમંત્રણ શેર કરો">Share invitation</button>
+          <button type="button" id="replay" data-en="Watch again" data-gu="ફરીથી જુઓ">Watch again</button>
+        </div>
+      </div>
+      <div class="petals" aria-hidden="true"></div>
+    </section>
+  </main>
 </body>
 </html>
