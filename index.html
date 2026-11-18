@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Serif+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=events-1">
-  <script src="./script.js?v=events-1" defer></script>
+  <link rel="stylesheet" href="./style.css?v=family-space-1">
+  <script src="./script.js?v=family-space-1" defer></script>
 </head>
 <body>
   <div class="loading-screen" id="loading-screen" role="dialog" aria-modal="true" aria-labelledby="loading-title">
@@ -39,6 +39,7 @@
   <nav class="dots" aria-label="Invitation scenes">
     <a href="#ganpati" aria-label="Ganpati blessing" class="current"></a>
     <a href="#couple" aria-label="Jinali and Pranit"></a>
+    <a href="#families" aria-label="Jinali and Pranit's families"></a>
     <a href="#doors" aria-label="Palace gateway"></a>
     <a href="#wedding" aria-label="Celebrations overview"></a>
     <a href="#ganesh-pooja" aria-label="Ganesh Pooja"></a>
@@ -64,7 +65,7 @@
       </div>
       <div class="swipe-hint"><span data-en="Swipe up to enter" data-gu="આગળ જોવા ઉપર સ્વાઇપ કરો">Swipe up to enter</span><span class="chevron">⌄</span></div>
     </section>
-    <section class="scene families" id="couple" aria-label="The couple and their families">
+    <section class="scene families couple-story" id="couple" aria-label="A blessing and invitation from Jinali and Pranit">
       <div class="sky sky-night"></div>
       <div class="artwork palace-art" data-art="palace">
         <img class="layer layer-far" data-slot="palace-far" src="./assets/palace-far.png" alt="" loading="lazy">
@@ -79,6 +80,24 @@
         <p class="ganesh-mantra reveal" lang="sa">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः<br>निर्विघ्ने कुरु में देव सर्वकार्येषु सर्वदा</p>
         <div class="family-rule reveal" aria-hidden="true">✦</div>
         <p class="families-request reveal" data-en="With hearts full of love, gratitude, and joy, we invite you to join us as we begin a beautiful new chapter filled with laughter, love, and a lifetime of togetherness." data-gu="પ્રેમ, કૃતજ્ઞતા અને આનંદથી ભરેલા હૃદય સાથે, હાસ્ય, પ્રેમ અને જીવનભરના સાથથી ભરેલી નવી સફરની શરૂઆતમાં આપને અમારી સાથે જોડાવા હાર્દિક આમંત્રણ છે.">With hearts full of love, gratitude, and joy, we invite you to join us as we begin a beautiful new chapter filled with laughter, love, and a lifetime of togetherness.</p>
+        <h2 class="couple-signature reveal" data-en="Jinali &amp; Pranit" data-gu="જિનાલી અને પ્રણિત">Jinali &amp; Pranit</h2>
+      </div>
+      <div class="swipe-hint"><span data-en="Meet our families" data-gu="અમારા પરિવારોને મળો">Meet our families</span><span class="chevron">⌄</span></div>
+      <div class="petals" aria-hidden="true"></div>
+    </section>
+    <section class="scene families family-portrait" id="families" aria-label="The families of Jinali and Pranit">
+      <div class="sky sky-night"></div>
+      <div class="artwork palace-art" data-art="palace">
+        <img class="layer layer-far" data-slot="palace-far" src="./assets/palace-far.png" alt="" loading="lazy">
+        <img class="layer layer-main" data-slot="palace-main" src="./assets/palace-main.png" alt="" loading="lazy">
+        <div class="terrace-lights" aria-hidden="true"></div>
+        <div class="walking-track"><img data-slot="couple-walking" src="./assets/couple-walking.png" alt="" loading="lazy"></div>
+        <img class="layer layer-front" data-slot="palace-front" src="./assets/palace-front.png" alt="" loading="lazy">
+      </div>
+      <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone lineage-content">
+        <p class="lineage-overline reveal" data-en="With our families' blessings" data-gu="અમારા પરિવારોના આશીર્વાદ સાથે">With our families' blessings</p>
+        <div class="family-rule reveal" aria-hidden="true">✦</div>
         <div class="couple-lineage">
           <div class="person-block reveal">
             <h2 data-en="Jinali" data-gu="જિનાલી">Jinali</h2>

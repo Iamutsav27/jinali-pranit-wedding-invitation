@@ -42,11 +42,12 @@ body:not(.entered){overflow:hidden}
 .active .reveal:nth-child(3){transition-delay:.34s}
 .active .reveal:nth-child(4){transition-delay:.5s}
 .families-content>.reveal:nth-child(1){transition-delay:.08s}
-.families-content>.reveal:nth-child(2){transition-delay:.34s}
+.families-content>.reveal:nth-child(2){transition-delay:.2s}
+.families-content>.reveal:nth-child(3){transition-delay:.34s}
 .couple-names .reveal:nth-child(1){transition-delay:.68s}
 .couple-names .reveal:nth-child(2){transition-delay:.94s}
 .couple-names .reveal:nth-child(3){transition-delay:1.18s}
-.families-content>.reveal:last-child{transition-delay:1.45s}
+.families-content>.reveal:last-child{transition-delay:.55s}
 .details-content .reveal:nth-child(1){transition-delay:.08s}
 .details-content .reveal:nth-child(2){transition-delay:.25s}
 .details-content .reveal:nth-child(3){transition-delay:.43s}
@@ -69,14 +70,25 @@ body:not(.entered){overflow:hidden}
 .intro-content .intro-title{margin-top:auto}
 .intro-date{font-size:clamp(1.2rem,4vw,1.7rem);letter-spacing:.15em;color:var(--gold)}
 .families .scene-shade{background:linear-gradient(#04111ef2 0%,#071522de 48%,#07152240 76%,#04111e18 100%)}
-.families .content-zone{top:4%;height:70%;gap:clamp(2px,.6dvh,6px);justify-content:center}
+.families .content-zone{top:4%;justify-content:center}
+.couple-story .content-zone{height:59%;gap:clamp(10px,2.1dvh,22px)}
 .ganesh-mantra{max-width:500px;color:var(--gold);font:500 clamp(.83rem,2.95vw,1.12rem)/1.38 "Noto Serif Devanagari",serif;text-wrap:balance}
 .family-rule{font-size:clamp(.9rem,3.1vw,1.2rem);color:var(--gold);line-height:1}
-.families-request{max-width:470px;font-size:clamp(1.02rem,3.5vw,1.45rem);line-height:1.05;text-wrap:balance}
-.couple-lineage{display:flex;flex-direction:column;align-items:center;gap:clamp(1px,.35dvh,4px);width:100%}
-.person-block h2{font:400 clamp(2.5rem,9.4vw,4.3rem)/.83 "Great Vibes Local","Great Vibes",cursive;color:#f5d59e;text-shadow:0 2px 18px #f4c57344}
-.person-block p{max-width:480px;font-size:clamp(.89rem,3.05vw,1.22rem);line-height:1.05;color:#fff7e6}
-.joining-amp{font:400 clamp(1.75rem,6vw,2.45rem)/.9 "Great Vibes Local","Great Vibes",cursive;color:var(--gold)}
+.families-request{max-width:440px;font-size:clamp(1.1rem,3.9vw,1.5rem);line-height:1.13;text-wrap:balance}
+.couple-signature{max-width:100%;font:400 clamp(2.8rem,10vw,4.6rem)/1.13 "Great Vibes Local","Great Vibes",cursive;color:#f6d99f;text-wrap:balance}
+.family-portrait .sky-night{background:radial-gradient(ellipse at 50% 74%,#8c6661 0%,#2d3b50 36%,#081a2d 75%,#06121f 100%)}
+.family-portrait .artwork{filter:saturate(1.06) brightness(1.04)}
+.family-portrait .scene-shade{background:linear-gradient(#04111ef0 0%,#071522e0 48%,#07152245 75%,#04111e1b 100%)}
+.family-portrait .content-zone{height:60%;gap:clamp(10px,1.8dvh,18px)}
+.lineage-overline{font-size:clamp(.85rem,2.8vw,1.05rem);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.couple-lineage{display:flex;flex-direction:column;align-items:center;gap:clamp(12px,2dvh,20px);width:100%}
+.person-block{display:flex;flex-direction:column;align-items:center;gap:clamp(5px,.8dvh,9px);width:100%}
+.person-block h2{font:400 clamp(3rem,10vw,4.5rem)/.9 "Great Vibes Local","Great Vibes",cursive;color:#f5d59e;text-shadow:0 2px 18px #f4c57344}
+.person-block p{max-width:420px;font-size:clamp(1rem,3.3vw,1.3rem);line-height:1.2;color:#fff7e6;text-wrap:balance}
+.joining-amp{font:400 clamp(1.9rem,6vw,2.6rem)/.9 "Great Vibes Local","Great Vibes",cursive;color:var(--gold)}
+.family-portrait .person-block:first-child{transition-delay:.22s}
+.family-portrait .joining-amp{transition-delay:.38s}
+.family-portrait .person-block:last-child{transition-delay:.54s}
 .couple-names{display:flex;flex-direction:column;align-items:center;font-weight:500;line-height:.77}
 .couple-names span{display:block;font-size:clamp(3.8rem,15vw,6.8rem)}
 .couple-names em{display:block;font:normal clamp(2.2rem,9vw,4rem) "Great Vibes",cursive;color:var(--gold);line-height:1.08}
@@ -208,14 +220,16 @@ body[lang="gu"] .rsvp-content h2{font-size:clamp(2.15rem,8vw,3.8rem);line-height
 body[lang="gu"] .rsvp-button{font-family:var(--gu);font-size:clamp(1.05rem,4vw,1.4rem)}
 body[lang="gu"] .ganesh-mantra{font-family:"Noto Serif Devanagari",serif}
 body[lang="gu"] .person-block h2{font:500 clamp(1.8rem,7vw,3rem)/1.15 var(--gu)}
-body[lang="gu"] .person-block p{font-size:clamp(.76rem,2.75vw,1.05rem);line-height:1.2}
+body[lang="gu"] .person-block p{font-size:clamp(.9rem,3.1vw,1.2rem);line-height:1.25}
 body[lang="gu"] .joining-amp{font:500 clamp(1.05rem,4vw,1.6rem)/1.1 var(--gu)}
-body[lang="gu"] .families-request{font-size:clamp(.88rem,3.05vw,1.2rem);line-height:1.25}
+body[lang="gu"] .families-request{font-size:clamp(1rem,3.5vw,1.3rem);line-height:1.28}
+body[lang="gu"] .couple-signature{font:500 clamp(1.9rem,7.5vw,3rem)/1.2 var(--gu)}
+body[lang="gu"] .lineage-overline{letter-spacing:.02em;text-transform:none}
 body[lang="gu"] .door-content h2{font:500 clamp(2rem,7vw,3.5rem)/1.25 var(--gu)}
 body[lang="gu"] .event-kicker{font:500 clamp(1rem,3.7vw,1.55rem)/1.25 var(--gu)}
 body[lang="gu"] .event-content h2{font:500 clamp(2.6rem,10vw,4.6rem)/1.12 var(--gu)}
 body[lang="gu"] .event-date{font-size:clamp(1.1rem,4vw,1.8rem)}
 body[lang="gu"] .event-time{font-size:clamp(1.2rem,4.5vw,1.9rem);letter-spacing:0}
-@media(max-height:680px){.content-zone{top:4%;height:58%}.families .content-zone{top:4%;height:72%;gap:2px}.ganesh-mantra{font-size:clamp(.76rem,2.7vw,.99rem)}.families-request{font-size:clamp(.9rem,3vw,1.2rem)}.person-block h2{font-size:clamp(2.15rem,8.1vw,3.5rem)}.person-block p{font-size:clamp(.76rem,2.7vw,1rem)}.couple-names span{font-size:clamp(3.5rem,13vw,5.5rem)}.event-content{top:4%;height:56%;gap:4px}.event-content h2{font-size:clamp(3.1rem,11vw,4.8rem)}.closing .content-zone{top:3%;height:64%;gap:4px}.closing-actions button{min-height:38px}.rsvp-content{top:3%;height:65%;gap:5px}.rsvp-content h2{font-size:clamp(2.35rem,8vw,3.6rem)}.rsvp-button{min-height:52px}.intro-content{gap:8px}}
+@media(max-height:680px){.content-zone{top:4%;height:58%}.couple-story .content-zone{top:4%;height:59%;gap:clamp(7px,1.5dvh,12px)}.family-portrait .content-zone{top:4%;height:61%;gap:8px}.ganesh-mantra{font-size:clamp(.76rem,2.7vw,.99rem)}.families-request{font-size:clamp(1rem,3.4vw,1.25rem)}.person-block h2{font-size:clamp(2.4rem,8.6vw,3.6rem)}.person-block p{font-size:clamp(.89rem,3vw,1.08rem)}.couple-names span{font-size:clamp(3.5rem,13vw,5.5rem)}.event-content{top:4%;height:56%;gap:4px}.event-content h2{font-size:clamp(3.1rem,11vw,4.8rem)}.closing .content-zone{top:3%;height:64%;gap:4px}.closing-actions button{min-height:38px}.rsvp-content{top:3%;height:65%;gap:5px}.rsvp-content h2{font-size:clamp(2.35rem,8vw,3.6rem)}.rsvp-button{min-height:52px}.intro-content{gap:8px}}
 @media(max-width:380px){.chandelier{transform:scale(.7);transform-origin:top}.chandelier-right{transform:scale(.6)}.families-request{font-size:1.1rem}.closing-actions{gap:6px}}
 @media(prefers-reduced-motion:reduce){.story{transition:none}.layer,.walking-track,.walking-track img,.petal,.swipe-hint,.chandelier i,.candles i:before,.terrace-lights,.day-number,.event-backdrop,.door-content h2{animation:none!important}.reveal{opacity:1;filter:none;transform:none;transition:none}.gateway-world{transform:none}.gate-leaf,.petals,.fireworks{display:none}}

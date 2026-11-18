@@ -2,9 +2,9 @@
 
 A mobile-first, bilingual wedding invitation for 25–26 January 2027. Open `index.html` directly or visit the GitHub Pages site.
 
-The eleven story scenes retain the Ganpati intro video, English/ગુજરાતી language choice, background music, and swipe navigation. A controlled pager moves exactly one scene per vertical swipe, wheel gesture, or arrow key and locks input during the transition. Dots and section hash links remain available. The palace artwork uses independent transparent PNG layers with parallax and idle drift; the sandstone gateway opens during the doors-to-wedding transition.
+The twelve story scenes retain the Ganpati intro video, English/ગુજરાતી language choice, background music, and swipe navigation. A controlled pager moves exactly one scene per vertical swipe, wheel gesture, or arrow key and locks input during the transition. Dots and section hash links remain available. The palace artwork uses independent transparent PNG layers with parallax and idle drift; the sandstone gateway opens during the doors-to-wedding transition.
 
-The couple scene includes the Sanskrit Ganesh verse, the invitation, and both sets of parents. Five original illustrated event pages follow the celebrations overview:
+The couple scene includes the Sanskrit Ganesh verse and invitation. A separate family scene gives Jinali, Pranit, and both sets of parents room to breathe. Five original illustrated event pages follow the celebrations overview:
 
 | Event | Date | Time |
 | --- | --- | --- |
