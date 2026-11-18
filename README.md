@@ -2,7 +2,7 @@
 
 A mobile-first, bilingual wedding invitation for 26 January 2027. Open `index.html` directly or visit the GitHub Pages site.
 
-The five story scenes retain the Ganpati intro video, English/ગુજરાતી language choice, background music, and swipe navigation. The palace artwork uses independent transparent PNG layers with scroll parallax and idle drift. The sandstone gateway opens in direct proportion to scroll position.
+The six story scenes retain the Ganpati intro video, English/ગુજરાતી language choice, background music, and swipe navigation. A controlled pager moves exactly one scene per vertical swipe, wheel gesture, or arrow key and locks input during the transition. Dots and section hash links remain available. The palace artwork uses independent transparent PNG layers with parallax and idle drift; the sandstone gateway opens during the doors-to-wedding transition.
 
 The loading screen and Ganpati intro use the same cursive **JP** wordmark. Its script font is bundled in `assets/great-vibes.ttf` so the logo works in a directly opened HTML file; the font license is in `assets/OFL-Great-Vibes.txt`.
 
