@@ -6,6 +6,8 @@ The five story scenes retain the Ganpati intro video, English/ગુજરાત
 
 The loading screen and Ganpati intro use the same cursive **JP** wordmark. Its script font is bundled in `assets/great-vibes.ttf` so the logo works in a directly opened HTML file; the font license is in `assets/OFL-Great-Vibes.txt`.
 
+The final RSVP scene offers a bilingual **Yes, I'll be there** action. It opens WhatsApp with a message addressed to the host and ready to send. Guests confirm the message in WhatsApp; a static GitHub Pages site cannot submit it on their behalf.
+
 ## Artwork slots
 
 The named slots in `index.html` load these files from `assets/`:

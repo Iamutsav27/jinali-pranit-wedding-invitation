@@ -17,6 +17,7 @@ body:not(.entered){overflow:hidden}
 .sky-gateway{background:radial-gradient(ellipse at 50% 63%,#ac6c38 0%,#422d36 36%,#0a1729 76%)}
 .sky-wedding{background:radial-gradient(ellipse at 50% 82%,#4d4a44 0%,#1b2f40 42%,#081828 86%)}
 .sky-closing{background:radial-gradient(ellipse at 50% 77%,#3a5448 0%,#172b33 43%,#061724 85%)}
+.sky-rsvp{background:radial-gradient(ellipse at 50% 77%,#645043 0%,#293341 40%,#0a1b2a 84%)}
 .artwork{z-index:-3;background-image:linear-gradient(transparent 55%,#b8966835),url("./palace-entrance.png");background-size:cover,100% 48%;background-position:center,bottom;background-repeat:no-repeat;mask-image:linear-gradient(transparent 35%,#000 67%)}
 .artwork{-webkit-mask-image:linear-gradient(transparent 35%,#000 67%)}
 .artwork[data-art="mandap"]{background-image:linear-gradient(transparent 55%,#b8966835),url("./palace-night-wedding.png")}
@@ -116,6 +117,17 @@ body:not(.entered){overflow:hidden}
 .closing-actions button{min-height:44px;border:1px solid #f4d495;border-radius:99px;background:#071522ac;color:var(--ivory);font:600 clamp(.85rem,3vw,1rem)/1.1 var(--serif);letter-spacing:.02em;padding:8px 10px;backdrop-filter:blur(6px);box-shadow:inset 0 0 10px #efc67f16,0 2px 10px #0008;transition:background .25s,transform .25s}
 .closing-actions button:hover{background:#f4d49528;transform:translateY(-2px)}
 .closing-actions button:last-child{grid-column:1/-1}
+.rsvp .scene-shade{background:linear-gradient(#04111edb 0%,#071522b0 39%,transparent 67%,#04111e20 100%)}
+.rsvp-art .layer-mandap{filter:drop-shadow(0 0 26px #edbd795c)}
+.rsvp-content{top:5%;height:58%;gap:clamp(7px,1.3svh,14px)}
+.rsvp-ornament{font-size:clamp(1.35rem,5vw,2rem);color:var(--gold);line-height:1}
+.rsvp-content h2{max-width:480px;font-size:clamp(2.8rem,10vw,5rem);font-weight:500;line-height:.92;text-wrap:balance}
+.rsvp-copy{max-width:390px;font-size:clamp(1.2rem,4.2vw,1.65rem);line-height:1.12}
+.rsvp-button{width:min(100%,340px);min-height:60px;display:flex;align-items:center;justify-content:center;gap:12px;margin-top:clamp(4px,1svh,12px);padding:10px 19px;border:1px solid #fff1c5;border-radius:99px;background:linear-gradient(115deg,#f1ce8f,#fff1c6 48%,#dcaf70);color:#142132;font:600 clamp(1.35rem,5vw,1.75rem)/1.1 var(--serif);text-decoration:none;text-shadow:none;box-shadow:0 9px 30px #0007,0 0 0 5px #edc78826,inset 0 1px 0 #fff9e2;transition:filter .25s,box-shadow .25s,transform .25s}
+.rsvp-button:hover{filter:brightness(1.09);box-shadow:0 11px 32px #0009,0 0 0 7px #edc78833,inset 0 1px 0 #fff9e2}
+.rsvp-button:active{transform:scale(.98)}
+.rsvp-arrow{display:grid;place-items:center;width:32px;height:32px;border:1px solid #1421328a;border-radius:50%;font:400 20px/1 Georgia,serif}
+.rsvp-note{max-width:330px;font-size:clamp(.85rem,3.3vw,1rem);line-height:1.15;color:#f3e5cb}
 .candles{position:absolute;z-index:6;bottom:4%;left:0;right:0;height:8%}
 .candles i{position:absolute;bottom:0;width:5px;height:19px;background:#eed7a6;border-radius:2px;box-shadow:0 0 9px #f6d491}
 .candles i:before{content:"";position:absolute;left:0;top:-8px;width:6px;height:8px;background:#ffe69e;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 0 12px 4px #ffce72;animation:flame 1.2s infinite alternate}
@@ -156,6 +168,8 @@ body[lang="gu"] .couple-names span{font-size:clamp(2.8rem,11vw,4.8rem);line-heig
 body[lang="gu"] .couple-names em,body[lang="gu"] .family-script{font-family:var(--gu);font-size:clamp(1.75rem,6vw,2.9rem);line-height:1.3}
 body[lang="gu"] .intro-title,body[lang="gu"] .closing-content h2,body[lang="gu"] .door-content h2{line-height:1.2}
 body[lang="gu"] .closing-actions button{font-family:var(--gu);font-size:clamp(.72rem,2.8vw,.9rem)}
-@media(max-height:680px){.content-zone{top:4%;height:58%}.families-content{gap:3px}.couple-names span{font-size:clamp(3.5rem,13vw,5.5rem)}.closing .content-zone{top:3%;height:64%;gap:4px}.closing-actions button{min-height:38px}.intro-content{gap:8px}}
+body[lang="gu"] .rsvp-content h2{font-size:clamp(2.15rem,8vw,3.8rem);line-height:1.2}
+body[lang="gu"] .rsvp-button{font-family:var(--gu);font-size:clamp(1.05rem,4vw,1.4rem)}
+@media(max-height:680px){.content-zone{top:4%;height:58%}.families-content{gap:3px}.couple-names span{font-size:clamp(3.5rem,13vw,5.5rem)}.closing .content-zone{top:3%;height:64%;gap:4px}.closing-actions button{min-height:38px}.rsvp-content{top:3%;height:65%;gap:5px}.rsvp-content h2{font-size:clamp(2.35rem,8vw,3.6rem)}.rsvp-button{min-height:52px}.intro-content{gap:8px}}
 @media(max-width:380px){.chandelier{transform:scale(.7);transform-origin:top}.chandelier-right{transform:scale(.6)}.families-request{font-size:1.1rem}.closing-actions{gap:6px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.layer,.walking-track,.walking-track img,.petal,.swipe-hint,.chandelier i,.candles i:before,.terrace-lights,.day-number{animation:none!important}.reveal{opacity:1;filter:none;transform:none;transition:none}.gateway-world{transform:none}.gate-leaf,.petals,.fireworks{display:none}}

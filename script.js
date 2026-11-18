@@ -10,6 +10,8 @@
   const loading = $('#loading-screen');
   const loadingStatus = $('#loading-status');
   const enterButton = $('#enter-button');
+  const rsvpButton = $('#rsvp-yes');
+  const rsvpNumber = '918735912707';
   const door = $('#doors');
   const stage = $('.door-stage');
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -31,7 +33,15 @@
     });
     languageButton.textContent = language === 'en' ? 'ગુજરાતી' : 'English';
     updateMusicButton();
+    updateRsvpLink();
     try { localStorage.setItem('wedding-language', language); } catch (_) {}
+  }
+  function updateRsvpLink() {
+    const message = language === 'gu'
+      ? 'નમસ્તે! હું ૨૬ જાન્યુઆરી ૨૦૨૭ના રોજ જિનાલી અને પ્રણિતના લગ્નમાં હાજર રહીશ. આપ સૌ સાથે ઉજવણી કરવાની આતુરતા છે!'
+      : "Hello! I'll be there to celebrate Jinali and Pranit's wedding on 26 January 2027. Looking forward to celebrating with you!";
+    rsvpButton.href = 'https://wa.me/' + rsvpNumber + '?text=' + encodeURIComponent(message);
+    rsvpButton.setAttribute('aria-label', language === 'gu' ? 'WhatsApp દ્વારા હાજરીની પુષ્ટિ કરો' : 'Confirm attendance on WhatsApp');
   }
   function updateMusicButton() {
     const playing = !song.paused;

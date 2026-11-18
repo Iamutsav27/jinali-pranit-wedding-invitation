@@ -42,6 +42,7 @@
     <a href="#doors" aria-label="Palace gateway"></a>
     <a href="#wedding" aria-label="Wedding details"></a>
     <a href="#invitation" aria-label="Invitation closing"></a>
+    <a href="#rsvp" aria-label="RSVP"></a>
   </nav>
   <main class="story">
     <section class="scene intro active" id="ganpati" aria-label="Ganpati blessing">
@@ -138,6 +139,28 @@
           <button type="button" id="share-invite" data-en="Share invitation" data-gu="આમંત્રણ શેર કરો">Share invitation</button>
           <button type="button" id="replay" data-en="Watch again" data-gu="ફરીથી જુઓ">Watch again</button>
         </div>
+      </div>
+      <div class="petals" aria-hidden="true"></div>
+      <div class="swipe-hint"><span data-en="Swipe to reply" data-gu="જવાબ આપવા સ્વાઇપ કરો">Swipe to reply</span><span class="chevron">⌄</span></div>
+    </section>
+    <section class="scene rsvp" id="rsvp" aria-label="Confirm your attendance">
+      <div class="sky sky-rsvp"></div>
+      <div class="artwork mandap-art rsvp-art" data-art="mandap">
+        <img class="layer layer-far" data-slot="palace-far" src="./assets/palace-far.png" alt="" loading="lazy">
+        <img class="layer layer-mandap" data-slot="mandap-garden" src="./assets/mandap-garden.png" alt="" loading="lazy">
+        <img class="layer layer-front" data-slot="palace-front" src="./assets/palace-front.png" alt="" loading="lazy">
+      </div>
+      <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone rsvp-content">
+        <p class="eyebrow reveal" data-en="A place for you in our celebration" data-gu="અમારી ઉજવણીમાં આપનું સ્થાન છે">A place for you in our celebration</p>
+        <div class="rsvp-ornament reveal" aria-hidden="true">✦</div>
+        <h2 class="reveal" data-en="Will you celebrate with us?" data-gu="શું આપ અમારી સાથે ઉજવણી કરશો?">Will you celebrate with us?</h2>
+        <p class="rsvp-copy reveal" data-en="We would be delighted to have you with us for Jinali and Pranit's wedding." data-gu="જિનાલી અને પ્રણિતના લગ્નમાં આપ અમારી સાથે હશો તો અમને ખૂબ આનંદ થશે.">We would be delighted to have you with us for Jinali and Pranit's wedding.</p>
+        <a class="rsvp-button reveal" id="rsvp-yes" href="#" target="_blank" rel="noopener noreferrer">
+          <span data-en="Yes, I'll be there" data-gu="હા, હું આવીશ">Yes, I'll be there</span>
+          <span class="rsvp-arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="rsvp-note reveal" data-en="Opens WhatsApp with your reply ready to send" data-gu="આપનો જવાબ મોકલવા માટે WhatsApp ખુલશે">Opens WhatsApp with your reply ready to send</p>
       </div>
       <div class="petals" aria-hidden="true"></div>
     </section>
