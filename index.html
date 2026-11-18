@@ -8,9 +8,9 @@
   <title>Jinali &amp; Pranit | Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=pager-1">
-  <script src="./script.js?v=pager-1" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Serif+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=events-1">
+  <script src="./script.js?v=events-1" defer></script>
 </head>
 <body>
   <div class="loading-screen" id="loading-screen" role="dialog" aria-modal="true" aria-labelledby="loading-title">
@@ -40,7 +40,12 @@
     <a href="#ganpati" aria-label="Ganpati blessing" class="current"></a>
     <a href="#couple" aria-label="Jinali and Pranit"></a>
     <a href="#doors" aria-label="Palace gateway"></a>
-    <a href="#wedding" aria-label="Wedding details"></a>
+    <a href="#wedding" aria-label="Celebrations overview"></a>
+    <a href="#ganesh-pooja" aria-label="Ganesh Pooja"></a>
+    <a href="#mandap-muhurt" aria-label="Mandap Muhurt"></a>
+    <a href="#raas-garba" aria-label="Raas Garba"></a>
+    <a href="#varmala" aria-label="Varmala"></a>
+    <a href="#hast-melap" aria-label="Hast-melap"></a>
     <a href="#invitation" aria-label="Invitation closing"></a>
     <a href="#rsvp" aria-label="RSVP"></a>
   </nav>
@@ -71,10 +76,20 @@
       <canvas class="fireworks" aria-hidden="true"></canvas>
       <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
       <div class="content-zone families-content">
-        <p class="eyebrow reveal" data-en="With Ganpati Bappa's blessings" data-gu="ગણપતિ બાપાના આશીર્વાદ સાથે">With Ganpati Bappa's blessings</p>
-        <p class="families-request reveal" data-en="Together with their families, we request the honour of your presence at the wedding of" data-gu="અમારા પરિવાર સાથે, લગ્નના શુભ પ્રસંગે આપની ઉપસ્થિતિની હાર્દિક વિનંતી છે">Together with their families, we request the honour of your presence at the wedding of</p>
-        <h2 class="couple-names"><span class="reveal" data-en="Jinali" data-gu="જિનાલી">Jinali</span><em class="reveal" data-en="&amp;" data-gu="અને">&amp;</em><span class="reveal" data-en="Pranit" data-gu="પ્રણિત">Pranit</span></h2>
-        <p class="small-date reveal" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p>
+        <p class="ganesh-mantra reveal" lang="sa">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः<br>निर्विघ्ने कुरु में देव सर्वकार्येषु सर्वदा</p>
+        <div class="family-rule reveal" aria-hidden="true">✦</div>
+        <p class="families-request reveal" data-en="With hearts full of love, gratitude, and joy, we invite you to join us as we begin a beautiful new chapter filled with laughter, love, and a lifetime of togetherness." data-gu="પ્રેમ, કૃતજ્ઞતા અને આનંદથી ભરેલા હૃદય સાથે, હાસ્ય, પ્રેમ અને જીવનભરના સાથથી ભરેલી નવી સફરની શરૂઆતમાં આપને અમારી સાથે જોડાવા હાર્દિક આમંત્રણ છે.">With hearts full of love, gratitude, and joy, we invite you to join us as we begin a beautiful new chapter filled with laughter, love, and a lifetime of togetherness.</p>
+        <div class="couple-lineage">
+          <div class="person-block reveal">
+            <h2 data-en="Jinali" data-gu="જિનાલી">Jinali</h2>
+            <p data-en="D/o Mrs. Alka Kikani &amp; Mr. Nitinbhai Kikani" data-gu="શ્રીમતી અલકા કિકાણી અને શ્રી નિતિનભાઈ કિકાણીની પુત્રી">D/o Mrs. Alka Kikani &amp; Mr. Nitinbhai Kikani</p>
+          </div>
+          <span class="joining-amp reveal" data-en="&amp;" data-gu="અને">&amp;</span>
+          <div class="person-block reveal">
+            <h2 data-en="Pranit" data-gu="પ્રણિત">Pranit</h2>
+            <p data-en="S/o Mrs. Minaben Malvania &amp; Mr. Dharmendrabhai Malvania" data-gu="શ્રીમતી મીનાબેન માલવાણિયા અને શ્રી ધર્મેન્દ્રભાઈ માલવાણિયાના પુત્ર">S/o Mrs. Minaben Malvania &amp; Mr. Dharmendrabhai Malvania</p>
+          </div>
+        </div>
       </div>
       <div class="swipe-hint"><span data-en="Swipe to the palace" data-gu="મહેલ તરફ આગળ વધો">Swipe to the palace</span><span class="chevron">⌄</span></div>
       <div class="petals" aria-hidden="true"></div>
@@ -109,16 +124,76 @@
       <canvas class="fireworks" aria-hidden="true"></canvas>
       <div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
       <div class="content-zone details-content">
-        <p class="eyebrow reveal" data-en="Save the date" data-gu="તારીખ યાદ રાખજો">Save the date</p>
-        <h2 class="weekday reveal" data-en="Tuesday" data-gu="મંગળવાર">Tuesday</h2>
-        <div class="day-number reveal" data-en="26th" data-gu="૨૬મી">26th</div>
+        <p class="eyebrow reveal" data-en="Two days, one beautiful beginning" data-gu="બે દિવસ, એક સુંદર શરૂઆત">Two days, one beautiful beginning</p>
+        <h2 class="weekday reveal" data-en="Our Celebrations" data-gu="અમારા ઉત્સવો">Our Celebrations</h2>
+        <div class="day-number celebration-dates reveal" data-en="25–26" data-gu="૨૫–૨૬">25–26</div>
         <p class="month reveal" data-en="January '27" data-gu="જાન્યુઆરી '૨૭">January '27</p>
         <div class="date-divider reveal" aria-hidden="true">✧</div>
-        <p class="ceremony reveal" data-en="Wedding Ceremony" data-gu="લગ્ન વિધિ">Wedding Ceremony</p>
-        <p class="venue reveal" data-en="Time and venue to follow" data-gu="સમય અને સ્થળની વિગતો ટૂંક સમયમાં">Time and venue to follow</p>
+        <p class="ceremony reveal" data-en="Five moments of joy" data-gu="આનંદના પાંચ પ્રસંગો">Five moments of joy</p>
+        <p class="venue reveal" data-en="Venue details to follow" data-gu="સ્થળની વિગતો ટૂંક સમયમાં">Venue details to follow</p>
       </div>
-      <div class="swipe-hint"><span data-en="One more swipe" data-gu="એક સ્વાઇપ વધુ">One more swipe</span><span class="chevron">⌄</span></div>
+      <div class="swipe-hint"><span data-en="Explore the celebrations" data-gu="ઉજવણીઓ જુઓ">Explore the celebrations</span><span class="chevron">⌄</span></div>
       <div class="petals" aria-hidden="true"></div>
+    </section>
+    <section class="scene event-scene event-ganesh" id="ganesh-pooja" aria-label="Ganesh Pooja">
+      <div class="event-backdrop"></div><div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone event-content">
+        <p class="event-number reveal" data-en="01 / 05 · Monday" data-gu="૦૧ / ૦૫ · સોમવાર">01 / 05 · Monday</p>
+        <p class="event-kicker reveal" data-en="A blessed beginning" data-gu="શુભ શરૂઆત">A blessed beginning</p>
+        <h2 class="reveal" data-en="Ganesh Pooja" data-gu="ગણેશ પૂજા">Ganesh Pooja</h2>
+        <div class="event-rule reveal" aria-hidden="true">✦</div>
+        <p class="event-date reveal" data-en="25 January 2027" data-gu="૨૫ જાન્યુઆરી ૨૦૨૭">25 January 2027</p>
+        <p class="event-time reveal" data-en="3:00 PM" data-gu="બપોરે ૩:૦૦ વાગ્યે">3:00 PM</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Next celebration" data-gu="આગળનો પ્રસંગ">Next celebration</span><span class="chevron">⌄</span></div>
+    </section>
+    <section class="scene event-scene event-mandap" id="mandap-muhurt" aria-label="Mandap Muhurt">
+      <div class="event-backdrop"></div><div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone event-content">
+        <p class="event-number reveal" data-en="02 / 05 · Monday" data-gu="૦૨ / ૦૫ · સોમવાર">02 / 05 · Monday</p>
+        <p class="event-kicker reveal" data-en="Under the sacred mandap" data-gu="પવિત્ર મંડપમાં">Under the sacred mandap</p>
+        <h2 class="reveal" data-en="Mandap Muhurt" data-gu="મંડપ મુહૂર્ત">Mandap Muhurt</h2>
+        <div class="event-rule reveal" aria-hidden="true">✦</div>
+        <p class="event-date reveal" data-en="25 January 2027" data-gu="૨૫ જાન્યુઆરી ૨૦૨૭">25 January 2027</p>
+        <p class="event-time reveal" data-en="4:00 PM" data-gu="સાંજે ૪:૦૦ વાગ્યે">4:00 PM</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Next celebration" data-gu="આગળનો પ્રસંગ">Next celebration</span><span class="chevron">⌄</span></div>
+    </section>
+    <section class="scene event-scene event-garba" id="raas-garba" aria-label="Raas Garba">
+      <div class="event-backdrop"></div><div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone event-content">
+        <p class="event-number reveal" data-en="03 / 05 · Monday" data-gu="૦૩ / ૦૫ · સોમવાર">03 / 05 · Monday</p>
+        <p class="event-kicker reveal" data-en="An evening of rhythm and joy" data-gu="તાલ અને આનંદની સાંજ">An evening of rhythm and joy</p>
+        <h2 class="reveal" data-en="Raas Garba" data-gu="રાસ ગરબા">Raas Garba</h2>
+        <div class="event-rule reveal" aria-hidden="true">✦</div>
+        <p class="event-date reveal" data-en="25 January 2027" data-gu="૨૫ જાન્યુઆરી ૨૦૨૭">25 January 2027</p>
+        <p class="event-time reveal" data-en="9:00 PM" data-gu="રાત્રે ૯:૦૦ વાગ્યે">9:00 PM</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Next celebration" data-gu="આગળનો પ્રસંગ">Next celebration</span><span class="chevron">⌄</span></div>
+    </section>
+    <section class="scene event-scene event-varmala" id="varmala" aria-label="Varmala">
+      <div class="event-backdrop"></div><div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone event-content">
+        <p class="event-number reveal" data-en="04 / 05 · Tuesday" data-gu="૦૪ / ૦૫ · મંગળવાર">04 / 05 · Tuesday</p>
+        <p class="event-kicker reveal" data-en="The exchange of garlands" data-gu="વરમાળાનો શુભ પ્રસંગ">The exchange of garlands</p>
+        <h2 class="reveal" data-en="Varmala" data-gu="વરમાળા">Varmala</h2>
+        <div class="event-rule reveal" aria-hidden="true">✦</div>
+        <p class="event-date reveal" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p>
+        <p class="event-time reveal" data-en="11:30 AM" data-gu="સવારે ૧૧:૩૦ વાગ્યે">11:30 AM</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Next celebration" data-gu="આગળનો પ્રસંગ">Next celebration</span><span class="chevron">⌄</span></div>
+    </section>
+    <section class="scene event-scene event-hast" id="hast-melap" aria-label="Hast-melap">
+      <div class="event-backdrop"></div><div class="scene-shade"></div><div class="grain"></div><div class="vignette"></div>
+      <div class="content-zone event-content">
+        <p class="event-number reveal" data-en="05 / 05 · Tuesday" data-gu="૦૫ / ૦૫ · મંગળવાર">05 / 05 · Tuesday</p>
+        <p class="event-kicker reveal" data-en="Hand in hand, forever" data-gu="હાથમાં હાથ, સદા માટે">Hand in hand, forever</p>
+        <h2 class="reveal" data-en="Hast-melap" data-gu="હસ્તમેળાપ">Hast-melap</h2>
+        <div class="event-rule reveal" aria-hidden="true">✦</div>
+        <p class="event-date reveal" data-en="26 January 2027" data-gu="૨૬ જાન્યુઆરી ૨૦૨૭">26 January 2027</p>
+        <p class="event-time reveal" data-en="12:53 PM" data-gu="બપોરે ૧૨:૫૩ વાગ્યે">12:53 PM</p>
+      </div>
+      <div class="swipe-hint"><span data-en="Your invitation awaits" data-gu="આમંત્રણ આપની રાહ જુએ છે">Your invitation awaits</span><span class="chevron">⌄</span></div>
     </section>
     <section class="scene closing" id="invitation" aria-label="Awaiting your presence">
       <div class="sky sky-closing"></div>
@@ -135,7 +210,7 @@
         <p class="family-script reveal" data-en="Kikani &amp; Malvania Family" data-gu="કિકાણી અને માલવાણિયા પરિવાર">Kikani &amp; Malvania Family</p>
         <p class="closing-copy reveal" data-en="Your blessings will make our celebration complete." data-gu="આપના આશીર્વાદથી અમારી ઉજવણી પૂર્ણ થશે.">Your blessings will make our celebration complete.</p>
         <div class="closing-actions reveal">
-          <button type="button" id="save-date" data-en="Save the date" data-gu="તારીખ સાચવો">Save the date</button>
+          <button type="button" id="save-date" data-en="Save the dates" data-gu="તારીખો સાચવો">Save the dates</button>
           <button type="button" id="share-invite" data-en="Share invitation" data-gu="આમંત્રણ શેર કરો">Share invitation</button>
           <button type="button" id="replay" data-en="Watch again" data-gu="ફરીથી જુઓ">Watch again</button>
         </div>

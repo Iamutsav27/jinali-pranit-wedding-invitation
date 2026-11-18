@@ -147,6 +147,11 @@
   function pageTransform(index) {
     return 'translate3d(0,' + (-index * 100) + 'dvh,0)';
   }
+  function resetNativeScroll() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    if (scrollY) scrollTo(0, 0);
+  }
   function syncPage(index) {
     activeScene = scenes[index];
     scenes.forEach((scene, position) => scene.classList.toggle('active', position === index));
@@ -261,6 +266,7 @@
       story.style.opacity = '1';
       story.style.transition = '';
       story.style.transform = pageTransform(target);
+      resetNativeScroll();
       if (target === 0) resumeIntro(Boolean(options.restartIntro));
       if (options.updateHash !== false && queuedHashIndex === null) {
         try { history.replaceState(null, '', '#' + sceneIds[target]); } catch (_) {}
@@ -280,7 +286,7 @@
     story.style.transform = pageTransform(index);
     syncPage(index);
     setGate(0);
-    if (scrollY) scrollTo(0, 0);
+    resetNativeScroll();
     requestAnimationFrame(() => {
       if (!navigationLocked) story.style.transition = '';
     });
@@ -342,6 +348,8 @@
   });
   function handleHashChange() {
     const index = sceneIds.indexOf(location.hash.slice(1));
+    resetNativeScroll();
+    requestAnimationFrame(resetNativeScroll);
     if (index < 0 || index === currentIndex) return;
     if (!document.body.classList.contains('entered')) setInitialPage(index);
     else if (navigationLocked) queuedHashIndex = index;
@@ -349,7 +357,8 @@
   }
   addEventListener('hashchange', handleHashChange);
   addEventListener('popstate', handleHashChange);
-  addEventListener('scroll', () => { if (scrollY) scrollTo(0, 0); }, {passive:true});
+  addEventListener('scroll', resetNativeScroll, {passive:true});
+  document.body.addEventListener('scroll', resetNativeScroll, {passive:true});
   addEventListener('resize', resizeCanvases, {passive:true});
 
   const canvases = $$('.fireworks').map(canvas => ({canvas, ctx: canvas.getContext('2d'), particles:[], lastBurst:0}));
@@ -424,10 +433,11 @@
   $('#save-date').addEventListener('click', () => {
     const ics = [
       'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Jinali and Pranit//Wedding Invitation//EN',
-      'BEGIN:VEVENT','UID:jinali-pranit-wedding-20270126@example.com',
-      'DTSTAMP:20261113T000000Z','DTSTART;VALUE=DATE:20270126',
-      'DTEND;VALUE=DATE:20270127','SUMMARY:Jinali and Pranit Wedding',
-      'DESCRIPTION:Time and venue to follow.','END:VEVENT','END:VCALENDAR'
+      'BEGIN:VEVENT','UID:jinali-pranit-wedding-20270125@example.com',
+      'DTSTAMP:20261118T000000Z','DTSTART;VALUE=DATE:20270125',
+      'DTEND;VALUE=DATE:20270127','SUMMARY:Jinali and Pranit Wedding Celebrations',
+      'DESCRIPTION:25 Jan: Ganesh Pooja 3:00 PM; Mandap Muhurt 4:00 PM; Raas Garba 9:00 PM. 26 Jan: Varmala 11:30 AM; Hast-melap 12:53 PM. Venue details to follow.',
+      'END:VEVENT','END:VCALENDAR'
     ].join('\r\n');
     const url = URL.createObjectURL(new Blob([ics], {type:'text/calendar'}));
     const link = document.createElement('a');
